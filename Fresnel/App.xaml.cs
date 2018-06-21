@@ -21,8 +21,8 @@ namespace Fresnel
         {
             // Handle when your app starts
             AppCenter.Start("ios=00611398-2571-4e1f-9355-2e0a8260304e;" +
-                  "uwp={Your UWP App secret here};" +
-                  "android={Your Android App secret here}",
+                            "uwp={Your UWP App secret here};" +
+                            "android=ea305699-1808-4626-bba7-2d654ed7028e;",
                             typeof(Analytics), typeof(Crashes));
         }
 
