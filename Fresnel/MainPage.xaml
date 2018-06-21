@@ -2,6 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Fresnel" x:Class="Fresnel.MainPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Fresnel Lens" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text="Welcome to Fresnel Lens, which is awesome." HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
     </StackLayout>
 </ContentPage>
