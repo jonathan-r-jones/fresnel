@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresnel.Views.Page3"
+             Title="Operations">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Image 
+                    Aspect="AspectFit"
+                    BackgroundColor="White"
+                    HeightRequest="90"
+                    IsOpaque="True"                
+                    Source="doj.png"
+                    VerticalOptions="Center"
+                    WidthRequest="90"
+                />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Label
+                    Text="• 14 May 2018: JSOC detected two email campaigns containing credential harvesting links. There are no indications of internal users responding to the emails.  All IOCs from the email campaigns have been blocked.  Please see the next page for statistics."
+                    FontSize="Large"
+                    />
+                <Label
+                    Text="• 14 May 2018: approximately 2:03 PM, JSOC received an alert showing that cjis.gov was down. The Component was notified and began response actions. Approximately 8:30 PM, JSOC received that cjis.gov was back up. JSOC has requested for a root cause."
+                    FontSize="Large"
+                    />
+                <Label
+                    Text="• 12 May 2018: approximately 1:03 PM, JSOC detected lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus augue in neque lobortis eleifend. Maecenas posuere ultricies tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam et nisi in urna fringilla eleifend. In suscipit nulla turpis, a egestas nibh fringilla posuere. Mauris nulla augue, sodales sed condimentum a, sagittis vitae lectus. In vehicula turpis at odio posuere egestas. Maecenas consequat massa ipsum, vitae pharetra justo luctus et.
+
+Aenean in viverra libero. Praesent ultricies sem in commodo rhoncus. Integer fermentum iaculis feugiat. Integer dui risus, feugiat non arcu et, iaculis gravida nulla. Morbi rutrum, purus viverra vestibulum imperdiet, quam purus sollicitudin velit, in lacinia mauris dolor et justo. Pellentesque lectus enim, aliquet a sapien non, tristique tristique orci. Vestibulum placerat, nibh feugiat dapibus vehicula, mi nisi gravida diam, ac adipiscing quam ligula quis justo. Curabitur laoreet ligula velit. Pellentesque vitae nisl ac orci venenatis rutrum. Curabitur ut erat quam. Quisque at turpis ipsum. Praesent elementum condimentum pretium.
+
+Vestibulum at ante aliquet, mattis tellus eu, vestibulum erat. Etiam rutrum risus ac ultricies volutpat. Nunc vestibulum tortor non tempor ornare. Fusce lobortis tempus purus eget tristique. Nam euismod consequat nisi, sed varius sem suscipit ut. Duis porta nunc sem, eget aliquam nisl ullamcorper quis. Quisque eget lorem et odio blandit elementum. Aliquam eget consequat metus. Phasellus varius porta ligula ut pretium. Duis tincidunt iaculis gravida. Praesent aliquet convallis consequat. Nam lacinia vulputate risus id facilisis. Nulla porttitor magna non orci molestie, tempus bibendum tortor scelerisque. Suspendisse orci arcu, eleifend ut nunc quis, rutrum euismod metus. Nulla id consequat tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"
+                    FontSize="Large"
+                    />
+                <Label
+                    Text="• 10 May 2018: approximately 1:03 AM, JSOC also detected lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus augue in neque lobortis eleifend. Maecenas posuere ultricies tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam et nisi in urna fringilla eleifend. In suscipit nulla turpis, a egestas nibh fringilla posuere. Mauris nulla augue, sodales sed condimentum a, sagittis vitae lectus. In vehicula turpis at odio posuere egestas. Maecenas consequat massa ipsum, vitae pharetra justo luctus et.
+
+Aenean in viverra libero. Praesent ultricies sem in commodo rhoncus. Integer fermentum iaculis feugiat. Integer dui risus, feugiat non arcu et, iaculis gravida nulla. Morbi rutrum, purus viverra vestibulum imperdiet, quam purus sollicitudin velit, in lacinia mauris dolor et justo. Pellentesque lectus enim, aliquet a sapien non, tristique tristique orci. Vestibulum placerat, nibh feugiat dapibus vehicula, mi nisi gravida diam, ac adipiscing quam ligula quis justo. Curabitur laoreet ligula velit. Pellentesque vitae nisl ac orci venenatis rutrum. Curabitur ut erat quam. Quisque at turpis ipsum. Praesent elementum condimentum pretium.
+
+Vestibulum at ante aliquet, mattis tellus eu, vestibulum erat. Etiam rutrum risus ac ultricies volutpat. Nunc vestibulum tortor non tempor ornare. Fusce lobortis tempus purus eget tristique. Nam euismod consequat nisi, sed varius sem suscipit ut. Duis porta nunc sem, eget aliquam nisl ullamcorper quis. Quisque eget lorem et odio blandit elementum. Aliquam eget consequat metus. Phasellus varius porta ligula ut pretium. Duis tincidunt iaculis gravida. Praesent aliquet convallis consequat. Nam lacinia vulputate risus id facilisis. Nulla porttitor magna non orci molestie, tempus bibendum tortor scelerisque. Suspendisse orci arcu, eleifend ut nunc quis, rutrum euismod metus. Nulla id consequat tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"
+                    FontSize="Large"
+                    />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

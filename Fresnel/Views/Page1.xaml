@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresnel.Views.Page1"
+             Title="Home - CSS System Status">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Image 
+                    Aspect="AspectFit"
+                    BackgroundColor="White"
+                    HeightRequest="90"
+                    IsOpaque="True"                
+                    Source="doj.png"
+                    VerticalOptions="Center"
+                    WidthRequest="90"
+                />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text=" "
+                    TextColor="MidnightBlue"
+                    FontSize="Large"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text="Daily Executive Report for June 14, 2018"
+                    TextColor="MidnightBlue"
+                    FontSize="Large"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text=" "
+                    TextColor="MidnightBlue"
+                    FontSize="Large"
+                />
+                <Image 
+                    BackgroundColor="WhiteSmoke"
+                    Source="css_system_status.PNG"
+                    Aspect="AspectFit"
+                    IsOpaque="True"                
+                    WidthRequest="100"
+                    HeightRequest="250"/>
+
+            </StackLayout>
+        </ScrollView>
+        </ContentPage.Content>
+</ContentPage>

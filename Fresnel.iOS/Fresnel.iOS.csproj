@@ -156,4 +156,109 @@
       <Name>Fresnel</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\css_system_status.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\current_foreign_travel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\doj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\email_statistics.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\itemIcon9.png" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresnel.Views.Page2"
+             Title="Total Open Incidents">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Image 
+                    Aspect="AspectFit"
+                    BackgroundColor="White"
+                    HeightRequest="90"
+                    IsOpaque="True"                
+                    Source="doj.png"
+                    VerticalOptions="Center"
+                    WidthRequest="90"
+                />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="*" />
+                        <RowDefinition
+                            Height="*" />
+                        <RowDefinition
+                            Height="*" />
+                        <RowDefinition
+                            Height="*" />
+                        <RowDefinition 
+                            Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="8" />
+                        <ColumnDefinition
+                            Width="24" />
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="50" />
+                        <ColumnDefinition
+                            Width="8" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Row="0"
+                        Grid.Column="0" />
+                    <Image 
+                        Source="cat_08.png"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        WidthRequest="2"
+                        HeightRequest="2"/>
+                    <Label
+                        Text="Cat 08 Lost Device"
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="0"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="246"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="0"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Row="0"
+                        Grid.Column="4" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="1" />
+                    <Image 
+                        Source="cat_11.png"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        WidthRequest="2"
+                        HeightRequest="2"/>
+                    <Label
+                        Text="Cat 11 Malicious Email"
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="1"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="175"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="1"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="1" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="2" />
+                    <Image 
+                        Source="cat_04.png"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        WidthRequest="2"
+                        HeightRequest="2"/>
+                    <Label
+                        Text="Cat 04 Investigation"
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="2"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="154"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="2"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="2" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="3" />
+                    <Image 
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        Source="cat_07.png"
+                        HeightRequest="2"
+                        WidthRequest="2"/>
+                    <Label
+                        Text="Cat 07 Classified Spill"
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="3"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="144"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="3"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="3" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="4" />
+                    <Image 
+                        Grid.Column="1"
+                        Grid.Row="4"
+                        Source="cat_03.png"
+                        HeightRequest="2"
+                        WidthRequest="2"/>
+                    <Label
+                        Text="Cat 03 Malicious Code"
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="4"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="50"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="4"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="4" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="5" />
+                    <Image 
+                        Grid.Column="1"
+                        Grid.Row="5"
+                        Source="cat_02.png"
+                        HeightRequest="2"
+                        WidthRequest="2"/>
+                    <Label
+                        Text="Cat 02 Denial of Service (DoS)"
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="5"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="12"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="5"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="5" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="6" />
+                    <Image 
+                        Grid.Column="1"
+                        Grid.Row="6"
+                        Source="cat_00.png"
+                        HeightRequest="2"
+                        WidthRequest="2"/>
+                    <Label
+                        Text=""
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="6"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="-----"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="6"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="6" />
+                    <!-- Spacer Column-->
+                    <Label
+                        Text=""
+                        Grid.Column="0"
+                        Grid.Row="7" />
+                    <Image 
+                        Grid.Column="1"
+                        Grid.Row="7"
+                        Source="cat_00.png"
+                        HeightRequest="2"
+                        WidthRequest="2"/>
+                    <Label
+                        Text=""
+                        FontSize="Large"
+                        Grid.Column="2"
+                        Grid.Row="7"
+                     />
+                    <Label
+                        HorizontalTextAlignment="End"
+                        Text="781"
+                        FontSize="Large"
+                        Grid.Column="3"
+                        Grid.Row="7"
+                     />
+                    <Label
+                        Text=""
+                        Grid.Column="4"
+                        Grid.Row="7" />
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

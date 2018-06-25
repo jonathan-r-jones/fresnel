@@ -14,7 +14,7 @@ namespace Fresnel
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Fresnel.MainPage();
         }
 
         protected override void OnStart()
