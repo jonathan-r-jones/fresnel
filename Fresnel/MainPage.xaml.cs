@@ -45,7 +45,7 @@ namespace Fresnel
             navigationDrawerList.ItemsSource = menuList;
 
             // Initial navigation, this can be used for our home page
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Page1)));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Page7)));
         }
 
         // Event for Menu Item selection, here we are going to handle navigation based
