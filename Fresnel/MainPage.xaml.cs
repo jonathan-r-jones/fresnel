@@ -30,6 +30,7 @@ namespace Fresnel
             var page5 = new MasterPageItem() { Title = "Email Statistics", Icon = "itemIcon5.png", TargetType = typeof(Page5) };
             var page6 = new MasterPageItem() { Title = "Current Foreign Travel", Icon = "itemIcon6.png", TargetType = typeof(Page6) };
             var page7 = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon7.png", TargetType = typeof(Page7) };
+            var page8 = new MasterPageItem() { Title = "Link to Source Documenta", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
 
 
             // Adding menu items to menuList
@@ -40,6 +41,7 @@ namespace Fresnel
             menuList.Add(page5);
             menuList.Add(page6);
             menuList.Add(page7);
+            menuList.Add(page8);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = menuList;

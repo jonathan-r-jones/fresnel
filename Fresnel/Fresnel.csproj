@@ -9,4 +9,10 @@
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.7.0" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.7.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Page8.xaml.cs">
+      <DependentUpon>Page8.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
