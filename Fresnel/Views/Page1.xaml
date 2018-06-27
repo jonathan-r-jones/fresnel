@@ -35,7 +35,15 @@
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
-                    Text="Daily Executive Report for June 26, 2018"
+                    Text="Daily Executive Report"
+                    TextColor="MidnightBlue"
+                    FontSize="Large"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text="for June 26, 2018"
                     TextColor="MidnightBlue"
                     FontSize="Large"
                 />
