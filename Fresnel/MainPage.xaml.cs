@@ -32,6 +32,7 @@ namespace Fresnel
             var page7 = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon7.png", TargetType = typeof(Page7) };
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
             var page9 = new MasterPageItem() { Title = "AirWatch Connector", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
+            var page10 = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(Page10) };
 
 
             // Adding menu items to menuList
@@ -44,12 +45,13 @@ namespace Fresnel
             menuList.Add(page7);
             menuList.Add(page8);
             menuList.Add(page9);
+            menuList.Add(page10);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = menuList;
 
             // Initial navigation, this can be used for our home page
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Page7)));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Page10)));
         }
 
         // Event for Menu Item selection, here we are going to handle navigation based

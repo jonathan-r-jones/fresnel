@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Fresnel.Views.Page4"
-    Title="SPDR Heat Map">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Fresnel.Views"
+             x:Class="Fresnel.Views.Page10"
+             Title="About">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -27,7 +28,7 @@
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
-                    Text=" "
+                    Text="Fresnel: CSS System Status"
                     TextColor="MidnightBlue"
                     FontSize="Large"
                 />
@@ -35,11 +36,10 @@
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
-                    Text="Under Construction"
+                    Text="Application Date Version: Jun-27-2018 11:30 AM"
                     TextColor="MidnightBlue"
-                    FontSize="Large"
                 />
             </StackLayout>
-    </ScrollView>
-  </ContentPage.Content>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
