@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fresnel.Views.Page7"
-             Title="Azure Data">
+             Title="Azure Data Jul-2-2018">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
