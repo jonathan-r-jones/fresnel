@@ -23,7 +23,14 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
+                <ListView x:Name="open_incidents" ItemsSource="{Binding Open_Incidents}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Title}" Detail="{Binding Notes}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
         </ScrollView>
-        </ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>
