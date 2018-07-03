@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using Fresnel.Models;
-using Fresnel.Services;
 
 namespace Fresnel.ViewModels
 {
@@ -17,18 +16,13 @@ namespace Fresnel.ViewModels
 				OnPropertyChanged();
 			}
 		}
-
 		public OpenIncidentsViewModel()
 		{
-            // Core services
-            var fresnelService = new FresnelApiDataService(new Uri("https://hamster7.azurewebsites.net"));
-            //await fresnelService.GetEntriesAsync();
-            //.Subscribe(entries => LogEntries = new ObservableCollection<TripLogEntry>(entries));
             Open_Incidents = new ObservableCollection<Open_Incident>
             {
                 new Open_Incident
                 {
-                    Name = "I need",
+                    Name = "Environmental DNA",
                     Count = 27,
                     Rating = 3,
                     Date = new DateTime(2017, 2, 5),
@@ -37,7 +31,7 @@ namespace Fresnel.ViewModels
                 },
                 new Open_Incident
                 {
-                    Name = "a responsive",
+                    Name = "Transiting Exoplanet Survey Satellite",
                     Count = 28,
                     Rating = 4,
                     Date = new DateTime(2017, 4, 13),
@@ -46,7 +40,7 @@ namespace Fresnel.ViewModels
                 },
                 new Open_Incident
                 {
-                    Name = "Author",
+                    Name = "Aluminium Oxynitride, a.k.a. Transparent Aluminum",
                     Count = 29,
                     Title = "Golden Gate Bridge",
                     Notes = "Foggy, but beautiful.",

@@ -23,6 +23,14 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text="Sample JSON Data"
+                    TextColor="MidnightBlue"
+                    FontSize="Large"
+                />
                 <ListView x:Name="open_incidents" ItemsSource="{Binding Open_Incidents}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
