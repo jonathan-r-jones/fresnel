@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Fresnel.Views.Page7"
-             Title="Test - Hardcoded Collection Data">
+             x:Class="Fresnel.Views.OpenIncidentsPage"
+             Title="Azure Data">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -26,7 +26,7 @@
                 <ListView x:Name="open_incidents" ItemsSource="{Binding Open_Incidents}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Title}" Detail="{Binding Notes}" />
+                            <TextCell Text="{Binding Name}" Detail="{Binding Count}" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
