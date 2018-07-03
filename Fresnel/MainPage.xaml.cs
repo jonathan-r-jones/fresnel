@@ -34,7 +34,8 @@ namespace Fresnel
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
             var page9 = new MasterPageItem() { Title = "AirWatch Connector", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
             var page10 = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(Page10) };
-            var page7 = new MasterPageItem() { Title = "Test Hardcoded Collection Data", Icon = "", TargetType = typeof(Page7) };
+            var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "", TargetType = typeof(TripLogPage) };
+            var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "", TargetType = typeof(Page7) };
 
 
             // Adding menu items to menuList
@@ -48,6 +49,7 @@ namespace Fresnel
             MenuList.Add(page8);
             MenuList.Add(page9);
             MenuList.Add(page10);
+            MenuList.Add(tripLogPage);
             MenuList.Add(page7);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml

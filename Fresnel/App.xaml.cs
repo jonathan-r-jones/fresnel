@@ -1,4 +1,3 @@
-using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Microsoft.AppCenter;
@@ -13,8 +12,7 @@ namespace Fresnel
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Fresnel.MainPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
