@@ -12,7 +12,7 @@ namespace Fresnel
         public App()
         {
             InitializeComponent();
-            MainPage = new MainPage();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()

@@ -1,14 +1,9 @@
 ﻿using Fresnel.MenuItems;
-using Fresnel.Services;
-using Fresnel.Views;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Fresnel
+namespace Fresnel.Views
 {
 
     public partial class MainPage : MasterDetailPage
