@@ -27,7 +27,7 @@ namespace Fresnel.Views
             var page6 = new MasterPageItem() { Title = "Current Foreign Travel", Icon = "itemIcon6.png", TargetType = typeof(Page6) };
             var openIncidentsPage = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon7.png", TargetType = typeof(OpenIncidentsPage) };
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
-            var page9 = new MasterPageItem() { Title = "AirWatch Connector", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
+            var page9 = new MasterPageItem() { Title = "Books Online", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
             var page10 = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(Page10) };
             var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "", TargetType = typeof(TripLogPage) };
             var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "", TargetType = typeof(Page7) };
