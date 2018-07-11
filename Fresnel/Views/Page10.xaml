@@ -42,8 +42,9 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
                     FontSize="Large"
-                    Text="Jul-11-2018 2:43 PM"
+                    Text="Jul-11-2018 6:16 PM"
                     TextColor="MidnightBlue"
                 />
                                                              <!-- qq-3 -->
