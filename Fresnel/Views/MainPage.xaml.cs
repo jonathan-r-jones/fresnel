@@ -25,27 +25,29 @@ namespace Fresnel.Views
             var page4 = new MasterPageItem() { Title = "SPDR Heat Map", Icon = "itemIcon4.png", TargetType = typeof(Page4) };
             var page5 = new MasterPageItem() { Title = "Email Statistics", Icon = "itemIcon5.png", TargetType = typeof(Page5) };
             var page6 = new MasterPageItem() { Title = "Current Foreign Travel", Icon = "itemIcon6.png", TargetType = typeof(Page6) };
-            var openIncidentsPage = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon7.png", TargetType = typeof(OpenIncidentsPage) };
+            var azureDataPage = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon7.png", TargetType = typeof(AzureDataPage) };
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
             var page9 = new MasterPageItem() { Title = "Books Online", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
             var page10 = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(Page10) };
             var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "", TargetType = typeof(TripLogPage) };
             var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "", TargetType = typeof(Page7) };
+            var openIncidentsPage = new MasterPageItem() { Title = "Test - Open Incidents", Icon = "", TargetType = typeof(OpenIncidentsPage) };
 
 
-            // Adding menu items to menuList
+            // Adding menu items to menuList (!menu)
             MenuList.Add(page1);
             MenuList.Add(page2);
             MenuList.Add(page3);
             MenuList.Add(page4);
             MenuList.Add(page5);
             MenuList.Add(page6);
-            MenuList.Add(openIncidentsPage);
+            MenuList.Add(azureDataPage);
             MenuList.Add(page8);
             MenuList.Add(page9);
             MenuList.Add(page10);
             MenuList.Add(tripLogPage);
             MenuList.Add(page7);
+            MenuList.Add(openIncidentsPage);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = MenuList;

@@ -14,13 +14,13 @@ namespace Fresnel.Views {
         public Page9() {
             BindingContext = books;
             InitializeComponent();
+            OnRefresh(null, null);
         }
 
         async void OnRefresh(object sender, EventArgs e)
         {
             // Turn on network indicator
-            this.IsBusy = true;
-
+            IsBusy = true;
             try
             {
                 var bookCollection = await manager.GetAll();
@@ -33,7 +33,7 @@ namespace Fresnel.Views {
             }
             finally
             {
-                this.IsBusy = false;
+                IsBusy = false;
             }
         }
 
@@ -55,11 +55,11 @@ namespace Fresnel.Views {
             Book book = item.CommandParameter as Book;
             if (book != null)
             {
-                if (await this.DisplayAlert("Delete Book?",
+                if (await DisplayAlert("Delete Book?",
                     "Are you sure you want to delete the book '"
                         + book.Title + "'?", "Yes", "Cancel") == true)
                 {
-                    this.IsBusy = true;
+                    IsBusy = true;
                     try
                     {
                         await manager.Delete(book.ISBN);
@@ -67,7 +67,7 @@ namespace Fresnel.Views {
                     }
                     finally
                     {
-                        this.IsBusy = false;
+                        IsBusy = false;
                     }
 
                 }
