@@ -30,6 +30,12 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
 
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="This is NOT local data. It was downloaded from http://xam150.azurewebsites.net/api/books"
+                    TextColor="MidnightBlue"
+                />
                 <Grid>
                     <ListView ItemsSource="{Binding}" ItemTapped="OnEditBook">
                         <ListView.ItemTemplate>
