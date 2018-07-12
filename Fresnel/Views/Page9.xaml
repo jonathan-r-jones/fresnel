@@ -33,7 +33,13 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="This is NOT local data. It was downloaded from http://xam150.azurewebsites.net/api/books"
+                    Text="This is NOT local data. It was downloaded from"
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="http://xam150.azurewebsites.net/api/books"
                     TextColor="MidnightBlue"
                 />
                 <Grid>
