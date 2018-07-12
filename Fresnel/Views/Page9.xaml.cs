@@ -1,4 +1,5 @@
 ﻿using Fresnel.Data;
+using Microsoft.AppCenter.Analytics;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,6 +13,7 @@ namespace Fresnel.Views {
         readonly BookManager manager = new BookManager();
 
         public Page9() {
+            Analytics.TrackEvent("Entering method: " + System.Reflection.MethodBase.GetCurrentMethod().Name.ToString());
             BindingContext = books;
             InitializeComponent();
             OnRefresh(null, null);

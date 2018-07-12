@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AppCenter.Analytics;
+using System;
 using System.Windows.Input;
 
 using Xamarin.Forms;
@@ -9,6 +10,7 @@ namespace Fresnel.ViewModels
     {
         public AboutViewModel()
         {
+            Analytics.TrackEvent("Entering method: " + System.Reflection.MethodBase.GetCurrentMethod().Name.ToString());
             Title = "About";
             switch (Device.RuntimePlatform)
             {
