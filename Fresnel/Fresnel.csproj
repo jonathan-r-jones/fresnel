@@ -20,8 +20,8 @@
     <Compile Update="Views\TripLogPage.xaml.cs">
       <DependentUpon>TripLogPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Page10.xaml.cs">
-      <DependentUpon>Page10.xaml</DependentUpon>
+    <Compile Update="Views\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\OpenIncidentsPage.xaml.cs">
       <DependentUpon>OpenIncidentsPage.xaml</DependentUpon>

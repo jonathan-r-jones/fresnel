@@ -3,8 +3,8 @@ using System.Globalization;
 using Xamarin.Forms;
 
 namespace Fresnel.Views {
-    public partial class Page10 : ContentPage {
-        public Page10() {
+    public partial class AboutPage : ContentPage {
+        public AboutPage() {
             InitializeComponent();
         }
     }
