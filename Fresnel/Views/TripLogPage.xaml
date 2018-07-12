@@ -7,14 +7,22 @@
         <ToolbarItem Text="New" Clicked="New_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-
-        <ListView x:Name="trips" ItemTapped="Trips_ItemTapped">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Title}" Detail="{Binding Notes}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Although the grid data is local data, this GPS map data is NOT. I noticed that at the moment it works on iOS but not Android."
+                    TextColor="MidnightBlue"
+                />
+                <ListView x:Name="trips" ItemTapped="Trips_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Title}" Detail="{Binding Notes}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
