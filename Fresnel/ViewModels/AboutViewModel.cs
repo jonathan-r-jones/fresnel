@@ -11,9 +11,11 @@ namespace Fresnel.ViewModels
         {
             Title = "About";
 
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://tinyurl.com/fresnel-doj")));
+            OpenWebCommandJMD = new Command(() => Device.OpenUri(new Uri("https://www.justice.gov/jmd")));
         }
 
         public ICommand OpenWebCommand { get; }
+        public ICommand OpenWebCommandJMD { get; }
     }
 }
