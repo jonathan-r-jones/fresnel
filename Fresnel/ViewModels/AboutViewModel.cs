@@ -10,11 +10,16 @@ namespace Fresnel.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://tinyurl.com/fresnel-doj")));
+            #if __ANDROID__
+                // Android-specific code
+                OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://tinyurl.com/fresnel-doj")));
+            #endif
+            #if __IOS__
+                // iOS-specific code
+                OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://tinyurl.com/fresnel-ios")));
+            #endif
             OpenWebCommandJMD = new Command(() => Device.OpenUri(new Uri("https://www.justice.gov/jmd")));
         }
-
         public ICommand OpenWebCommand { get; }
         public ICommand OpenWebCommandJMD { get; }
     }

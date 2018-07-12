@@ -11,7 +11,7 @@ namespace Fresnel.Services
     public class IncidentManager
     {
         const string Url = "http://xam150.azurewebsites.net/api/books/";
-        private string authorizationKey;
+        //private string authorizationKey;
 
         private async Task<HttpClient> GetClient()
         {
