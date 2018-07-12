@@ -71,14 +71,21 @@
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
-                    Text="This app was written in C# and native APIs using Xamarin Forms,"
+                    Text="This app was written in C# and native APIs"
                     TextColor="MidnightBlue"
                 />
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
-                    Text="which shares code between the iOS and Android platforms."
+                    Text="using Xamarin Forms, which shares code"
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text="between the iOS and Android platforms."
                     TextColor="MidnightBlue"
                 />
                 <Button Margin="20,20,20,20" Text="Update the App" Command="{Binding OpenWebCommand}" BackgroundColor="#56556F" TextColor="White" HeightRequest="50" WidthRequest="100"/>
