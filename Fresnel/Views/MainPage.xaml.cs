@@ -28,7 +28,7 @@ namespace Fresnel.Views
             var azureDataPage = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon7.png", TargetType = typeof(AzureDataPage) };
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
             var page9 = new MasterPageItem() { Title = "Books Online", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
-            var page10 = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
+            var AboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
             var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "", TargetType = typeof(TripLogPage) };
             var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "", TargetType = typeof(Page7) };
             var openIncidentsPage = new MasterPageItem() { Title = "Test - Open Incidents", Icon = "", TargetType = typeof(OpenIncidentsPage) };
@@ -44,7 +44,7 @@ namespace Fresnel.Views
             MenuList.Add(azureDataPage);
             MenuList.Add(page8);
             MenuList.Add(page9);
-            MenuList.Add(page10);
+            MenuList.Add(AboutPage);
             MenuList.Add(tripLogPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);

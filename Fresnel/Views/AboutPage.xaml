@@ -81,8 +81,8 @@
                     Text="which shares code between the iOS and Android platforms."
                     TextColor="MidnightBlue"
                 />
-                <Button Margin="20,20,20,20" Text="Update the App" Command="{Binding OpenWebCommand}" BackgroundColor="#595959" TextColor="White" HeightRequest="50" WidthRequest="100"/>
-                <Button Margin="20,20,20,20" Text="Learn More About JMD" Command="{Binding OpenWebCommandJMD}" BackgroundColor="#595959" TextColor="White" HeightRequest="50" WidthRequest="100"/>
+                <Button Margin="20,20,20,20" Text="Update the App" Command="{Binding OpenWebCommand}" BackgroundColor="#56556F" TextColor="White" HeightRequest="50" WidthRequest="100"/>
+                <Button Margin="20,20,20,20" Text="Learn More About JMD" Command="{Binding OpenWebCommandJMD}" BackgroundColor="#56556F" TextColor="White" HeightRequest="50" WidthRequest="100"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
