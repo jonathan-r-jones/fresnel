@@ -180,9 +180,6 @@
     <AndroidResource Include="Resources\drawable\ic_autorenew.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\menu 4 square diamond icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\black_diamond.png" />
   </ItemGroup>
   <ItemGroup>
