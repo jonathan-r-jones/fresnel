@@ -291,4 +291,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\diamond - green.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond - bright green.png" />
+  </ItemGroup>
 </Project>
