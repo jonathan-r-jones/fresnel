@@ -279,4 +279,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_autorenew.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diamond - green.png" />
+  </ItemGroup>
 </Project>
