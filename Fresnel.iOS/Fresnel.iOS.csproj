@@ -280,18 +280,12 @@
     <BundleResource Include="Resources\ic_autorenew.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\diamond 2.png" />
+    <BundleResource Include="Resources\black_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\diamond 3.png" />
+    <BundleResource Include="Resources\bright_green_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\diamond black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\diamond - green.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\diamond - bright green.png" />
+    <BundleResource Include="Resources\diamond_2.png" />
   </ItemGroup>
 </Project>

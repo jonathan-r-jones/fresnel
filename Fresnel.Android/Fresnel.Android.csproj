@@ -183,19 +183,13 @@
     <AndroidResource Include="Resources\drawable\menu 4 square diamond icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\diamond 2.png" />
+    <AndroidResource Include="Resources\drawable\black_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\diamond 3.png" />
+    <AndroidResource Include="Resources\drawable\bright_green_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\diamond black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\diamond - green.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\diamond - bright green.png" />
+    <AndroidResource Include="Resources\drawable\diamond_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
