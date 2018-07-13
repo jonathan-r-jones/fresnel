@@ -60,12 +60,10 @@
                 />
                                <!-- qq-3 -->
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="15" 
                     HorizontalTextAlignment="Center"
-                    FontAttributes="Bold"
                     Text=""
                     TextColor="MidnightBlue"
-                    FontSize="Large"
                 />
                 <Label
                     HeightRequest="30" 

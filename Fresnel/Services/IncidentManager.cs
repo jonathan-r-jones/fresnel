@@ -10,7 +10,7 @@ namespace Fresnel.Services
 {
     public class IncidentManager
     {
-        const string Url = "http://xam150.azurewebsites.net/api/books/";
+        const string Url = "https://hamster7.azurewebsites.net/tables/Open_Incidents/";
         //private string authorizationKey;
 
         private async Task<HttpClient> GetClient()
@@ -22,9 +22,9 @@ namespace Fresnel.Services
             //    authorizationKey = JsonConvert.DeserializeObject<string>(authorizationKey);
             //}
             //client.DefaultRequestHeaders.Add("Authorization", authorizationKey);
-            await client.GetStringAsync(Url);
             client.DefaultRequestHeaders.Add("zumo-api-version", "2.0.0");
-            client.DefaultRequestHeaders.Add("Accept", "application/json");
+            await client.GetStringAsync(Url);
+            //client.DefaultRequestHeaders.Add("Accept", "application/json");
             return client;
         }
 
