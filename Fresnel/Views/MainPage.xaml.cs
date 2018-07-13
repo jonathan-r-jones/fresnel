@@ -29,9 +29,9 @@ namespace Fresnel.Views
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
             var page9 = new MasterPageItem() { Title = "Books Online", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
             var AboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
-            var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "", TargetType = typeof(TripLogPage) };
-            var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "", TargetType = typeof(Page7) };
-            var openIncidentsPage = new MasterPageItem() { Title = "Test - Open Incidents", Icon = "", TargetType = typeof(OpenIncidentsPage) };
+            var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "menu 4 square diamond icon.png", TargetType = typeof(TripLogPage) };
+            var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "menu 4 square diamond icon.png", TargetType = typeof(Page7) };
+            var openIncidentsPage = new MasterPageItem() { Title = "Test - Open Incidents", Icon = "menu 4 square diamond icon.png", TargetType = typeof(OpenIncidentsPage) };
 
 
             // Adding menu items to menuList (!menu)
