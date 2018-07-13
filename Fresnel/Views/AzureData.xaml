@@ -43,7 +43,7 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="online Azure data that I created."
+                    Text="online Azure data that I created at https://hamster7.azurewebsites.net/tables/Open_Incidents/."
                     TextColor="MidnightBlue"
                 />
                 <Grid>
