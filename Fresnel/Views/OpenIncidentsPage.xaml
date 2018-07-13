@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Fresnel.Views.OpenIncidentsPage"
-    Title="Open Incidents">
+    Title="Test - JSON Data">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -23,14 +23,6 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
-                <Label
-                    HeightRequest="30" 
-                    HorizontalTextAlignment="Center"
-                    FontAttributes="Bold"
-                    Text="Sample JSON Data"
-                    TextColor="MidnightBlue"
-                    FontSize="Large"
-                />
                 <ListView x:Name="open_incidents" ItemsSource="{Binding Open_Incidents}">
                     <ListView.ItemTemplate>
                         <DataTemplate>

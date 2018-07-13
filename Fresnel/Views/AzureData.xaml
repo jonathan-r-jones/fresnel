@@ -31,7 +31,7 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="This pages contains roughly the same data that's on the 'Total Open Incidents', "
+                    Text="This pages contains roughly the same data that's on the 'Open Incidents', "
                     TextColor="MidnightBlue"
                 />
                 <Label

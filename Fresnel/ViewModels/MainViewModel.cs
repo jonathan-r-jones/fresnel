@@ -48,15 +48,6 @@ namespace Fresnel.ViewModels
                     Date = new DateTime(2017, 4, 26),
                     Latitude = 37.8268,
                     Longitude = -122.4798
-                },
-                new Open_Incident
-                {
-                    Title = "Wrapping",
-                    Notes = "Notice that there is a wrapping problem.",
-                    Rating = 5,
-                    Date = new DateTime(2017, 4, 26),
-                    Latitude = 37.8268,
-                    Longitude = -122.4798
                 }
             };
         }

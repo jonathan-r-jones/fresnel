@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fresnel.Views.Page7"
-             Title="Test - Hardcoded Collection Data">
+             Title="Test - Word Wrapping">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -23,6 +23,12 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Notice that there is word wrapping issue here."
+                    TextColor="MidnightBlue"
+                />
                 <ListView x:Name="open_incidents" ItemsSource="{Binding Open_Incidents}">
                     <ListView.ItemTemplate>
                         <DataTemplate>

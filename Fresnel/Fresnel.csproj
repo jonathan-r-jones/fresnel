@@ -17,6 +17,9 @@
     <Compile Update="Views\AzureData.xaml.cs">
       <DependentUpon>AzureData.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\SwPage.xaml.cs">
+      <DependentUpon>SwPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\TripLogPage.xaml.cs">
       <DependentUpon>TripLogPage.xaml</DependentUpon>
     </Compile>

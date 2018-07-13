@@ -24,6 +24,12 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
                 <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="This pages is useful for testing scrolling and screen rotation. Make sure that rotation is unlocked on the device."
+                    TextColor="MidnightBlue"
+                />
+                <Label
                     Text="• 14 May 2018: JSOC detected two email campaigns containing credential harvesting links. There are no indications of internal users responding to the emails.  All IOCs from the email campaigns have been blocked.  Please see the next page for statistics."
                     FontSize="Large"
                     />

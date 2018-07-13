@@ -19,8 +19,8 @@ namespace Fresnel.Views
             // Creating our pages for menu navigation
             // Here you can define title for item, 
             // icon on the left side, and page that you want to open after selection
-            var page1 = new MasterPageItem() { Title = "Home - CSS System Status", Icon = "itemIcon1.png", TargetType = typeof(Page1) };
-            var page2 = new MasterPageItem() { Title = "Total Open Incidents", Icon = "itemIcon2.png", TargetType = typeof(Page2) };
+            var page1 = new MasterPageItem() { Title = "Home", Icon = "itemIcon1.png", TargetType = typeof(Page1) };
+            var page2 = new MasterPageItem() { Title = "Open Incidents", Icon = "itemIcon2.png", TargetType = typeof(Page2) };
             var page3 = new MasterPageItem() { Title = "Operations", Icon = "itemIcon3.png", TargetType = typeof(Page3) };
             var page4 = new MasterPageItem() { Title = "SPDR Heat Map", Icon = "itemIcon4.png", TargetType = typeof(Page4) };
             var page5 = new MasterPageItem() { Title = "Email Statistics", Icon = "itemIcon5.png", TargetType = typeof(Page5) };
@@ -30,8 +30,9 @@ namespace Fresnel.Views
             var page9 = new MasterPageItem() { Title = "Books Online", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
             var AboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
             var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "bright_green_diamond.png", TargetType = typeof(TripLogPage) };
-            var page7 = new MasterPageItem() { Title = "Test - Hardcoded Collection Data", Icon = "diamond_2.png", TargetType = typeof(Page7) };
-            var openIncidentsPage = new MasterPageItem() { Title = "Test - Open Incidents", Icon = "black_diamond.png", TargetType = typeof(OpenIncidentsPage) };
+            var page7 = new MasterPageItem() { Title = "Test - Word Wrapping", Icon = "diamond_2.png", TargetType = typeof(Page7) };
+            var openIncidentsPage = new MasterPageItem() { Title = "Test - JSON Data", Icon = "black_diamond.png", TargetType = typeof(OpenIncidentsPage) };
+            var swPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "red_top_hat_diamond.png", TargetType = typeof(SwPage) };
 
 
             // Adding menu items to menuList (!menu)
@@ -48,6 +49,7 @@ namespace Fresnel.Views
             MenuList.Add(tripLogPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);
+            MenuList.Add(swPage);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = MenuList;

@@ -288,4 +288,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\diamond_2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\red_top_hat_diamond.png" />
+  </ItemGroup>
 </Project>
