@@ -26,7 +26,13 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="This page is useful for testing scrolling and screen rotation. Make sure that rotation is unlocked on the device."
+                    Text="This page is useful for testing scrolling and screen rotation."
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Make sure that rotation is unlocked on the device."
                     TextColor="MidnightBlue"
                 />
                 <Label

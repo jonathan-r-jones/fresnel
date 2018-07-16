@@ -29,13 +29,13 @@ namespace Fresnel.Views
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
             var page9 = new MasterPageItem() { Title = "Books Online", Icon = "itemIcon9.png", TargetType = typeof(Page9) };
             var AboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
-            var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "bright_green_diamond.png", TargetType = typeof(TripLogPage) };
-            var page7 = new MasterPageItem() { Title = "Test - Word Wrapping", Icon = "diamond_2.png", TargetType = typeof(Page7) };
-            var openIncidentsPage = new MasterPageItem() { Title = "Test - JSON Data", Icon = "black_diamond.png", TargetType = typeof(OpenIncidentsPage) };
-            var swPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "red_top_hat_diamond.png", TargetType = typeof(SwPage) };
+            var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "red_top_hat_diamond.png", TargetType = typeof(TripLogPage) };
+            var page7 = new MasterPageItem() { Title = "Test - Word Wrapping", Icon = "blue_pink_diamond.png", TargetType = typeof(Page7) };
+            var openIncidentsPage = new MasterPageItem() { Title = "Test - JSON Data", Icon = "m_purple_diamond.png", TargetType = typeof(OpenIncidentsPage) };
+            var swPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "bright_green_diamond.png", TargetType = typeof(SwPage) };
 
 
-            // Adding menu items to menuList (!menu)
+            // Adding menu items to menuList (!page, !menu)
             MenuList.Add(page1);
             MenuList.Add(page2);
             MenuList.Add(page3);
