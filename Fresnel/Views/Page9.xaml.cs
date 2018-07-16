@@ -33,6 +33,10 @@ namespace Fresnel.Views {
                         books.Add(book);
                 }
             }
+            catch
+            {
+                await DisplayAlert("Cannot Connect", "Either you are offline or the site is down.", "Ok");
+            }
             finally
             {
                 IsBusy = false;

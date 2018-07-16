@@ -31,25 +31,31 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="This pages contains roughly the same data that's on the 'Open Incidents', "
+                    Text="This pages contains roughly the same data that's on"
                     TextColor="MidnightBlue"
                 />
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="page, the main difference being that that data is hardcoded whereas this data is actual"
+                    Text="the 'Open Incidents' page, the main difference"
                     TextColor="MidnightBlue"
                 />
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="online Azure data that I created at:"
+                    Text=" being that that data is hardcoded whereas this data"
                     TextColor="MidnightBlue"
                 />
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="https://hamster7.azurewebsites.net/tables/Open_Incidents/."
+                    Text="is actual online Azure data that I created at:"
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="https://hamster7.azurewebsites.net/tables/Open_Incidents"
                     TextColor="MidnightBlue"
                 />
                 <Grid>

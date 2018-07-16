@@ -26,12 +26,15 @@ namespace Fresnel.Views {
             try
             {
                 var incidentCollection = await incidentManager.GetAll();
-
                 foreach (Incident incident in incidentCollection)
                 {
                     if (incidents.All(b => b.Id != incident.Id))
                         incidents.Add(incident);
                 }
+            }
+            catch
+            {
+                await DisplayAlert("Cannot Connect", "Either you are offline or the site is down.", "Ok");
             }
             finally
             {
