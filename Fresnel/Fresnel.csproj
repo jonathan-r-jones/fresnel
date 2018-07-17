@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\MonkeyPage.xaml.cs">
+      <DependentUpon>MonkeyPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\BikeSearchPage.xaml.cs">
       <DependentUpon>BikeSearchPage.xaml</DependentUpon>
     </Compile>
