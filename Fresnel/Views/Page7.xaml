@@ -29,6 +29,10 @@
                     Text="Notice that there is word wrapping issue here."
                     TextColor="MidnightBlue"
                 />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
                 <ListView x:Name="open_incidents" ItemsSource="{Binding Open_Incidents}">
                     <ListView.ItemTemplate>
                         <DataTemplate>

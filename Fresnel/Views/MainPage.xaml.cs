@@ -27,15 +27,14 @@ namespace Fresnel.Views
             var page6 = new MasterPageItem() { Title = "Current Foreign Travel", Icon = "itemIcon6.png", TargetType = typeof(Page6) };
             var azureDataPage = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon9.png", TargetType = typeof(AzureDataPage) };
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
-            var page9 = new MasterPageItem() { Title = "Books Online", Icon = "gray_gold_diamond.png", TargetType = typeof(Page9) };
-            var AboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
-            var tripLogPage = new MasterPageItem() { Title = "Test - GPS", Icon = "red_top_hat_diamond.png", TargetType = typeof(TripLogPage) };
+            var booksOnline = new MasterPageItem() { Title = "Books Online", Icon = "gray_gold_diamond.png", TargetType = typeof(Page9) };
+            var aboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
+            var gpsPage = new MasterPageItem() { Title = "Test - GPS", Icon = "red_top_hat_diamond.png", TargetType = typeof(TripLogPage) };
             var page7 = new MasterPageItem() { Title = "Test - Word Wrapping", Icon = "blue_pink_diamond.png", TargetType = typeof(Page7) };
             var openIncidentsPage = new MasterPageItem() { Title = "Test - JSON Data", Icon = "m_purple_diamond.png", TargetType = typeof(OpenIncidentsPage) };
-            var swPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "bright_green_diamond.png", TargetType = typeof(SwPage) };
+            var solarWindsPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "bright_green_diamond.png", TargetType = typeof(SwPage) };
+            var airWatchPage = new MasterPageItem() { Title = "Test - AirWatch SDK", Icon = "bright_green_diamond.png", TargetType = typeof(AirWatchPage) };
 
-
-            // Adding menu items to menuList (!page, !menu)
             MenuList.Add(page1);
             MenuList.Add(page2);
             MenuList.Add(page3);
@@ -44,12 +43,14 @@ namespace Fresnel.Views
             MenuList.Add(page4);
             MenuList.Add(page8);
             MenuList.Add(azureDataPage);
-            MenuList.Add(AboutPage);
-            MenuList.Add(tripLogPage);
+            MenuList.Add(aboutPage);
+            // Adding menu items to menuList (!page, !main, !menu)
+            MenuList.Add(booksOnline);
+            MenuList.Add(airWatchPage);
+            MenuList.Add(solarWindsPage);
+            MenuList.Add(gpsPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);
-            MenuList.Add(swPage);
-            MenuList.Add(page9);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = MenuList;

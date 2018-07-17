@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Fresnel.Views.TripLogPage"
-    Title="Test - GPS">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="New" Clicked="New_Clicked" />
-    </ContentPage.ToolbarItems>
+    x:Class="Fresnel.Views.AirWatch"
+    Title="Test - AirWatch SDK">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -29,27 +26,20 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="Although the grid data is local data, this GPS map data is NOT."
+                    FontAttributes="Bold"
+                    Text=" "
                     TextColor="MidnightBlue"
+                    FontSize="Large"
                 />
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="I noticed that at the moment it works on iOS but not Android."
+                    FontAttributes="Bold"
+                    Text="Under Construction"
                     TextColor="MidnightBlue"
+                    FontSize="Large"
                 />
-                <BoxView 
-                    HeightRequest="1" 
-                    WidthRequest="1"
-                    BackgroundColor="Gainsboro"/>
-                <ListView x:Name="trips" ItemTapped="Trips_ItemTapped">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding Title}" Detail="{Binding Notes}" />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
             </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
+    </ScrollView>
+  </ContentPage.Content>
 </ContentPage>

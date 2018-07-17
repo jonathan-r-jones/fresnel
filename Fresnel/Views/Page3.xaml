@@ -35,6 +35,10 @@
                     Text="Make sure that rotation is unlocked on the device."
                     TextColor="MidnightBlue"
                 />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
                 <Label
                     Text="• 14 May 2018: JSOC detected two email campaigns containing credential harvesting links. There are no indications of internal users responding to the emails.  All IOCs from the email campaigns have been blocked.  Please see the next page for statistics."
                     FontSize="Large"

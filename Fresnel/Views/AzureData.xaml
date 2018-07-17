@@ -58,6 +58,10 @@
                     Text="https://hamster7.azurewebsites.net/tables/Open_Incidents"
                     TextColor="MidnightBlue"
                 />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
                 <Grid>
                     <ListView ItemsSource="{Binding}" ItemTapped="OnEditBook">
                         <ListView.ItemTemplate>

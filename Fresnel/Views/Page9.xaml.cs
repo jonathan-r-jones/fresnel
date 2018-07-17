@@ -13,7 +13,7 @@ namespace Fresnel.Views {
         readonly BookManager manager = new BookManager();
 
         public Page9() {
-            Analytics.TrackEvent("Entering method: " + System.Reflection.MethodBase.GetCurrentMethod().Name.ToString());
+            Analytics.TrackEvent("Entering method Page 9 Constructor.");
             BindingContext = books;
             InitializeComponent();
             OnRefresh(null, null);
@@ -26,16 +26,15 @@ namespace Fresnel.Views {
             try
             {
                 var bookCollection = await manager.GetAll();
-
                 foreach (Book book in bookCollection)
                 {
                     if (books.All(b => b.ISBN != book.ISBN))
                         books.Add(book);
                 }
             }
-            catch
+            catch(Exception exception)
             {
-                await DisplayAlert("Cannot Connect", "Either you are offline or the site is down.", "Ok");
+                await DisplayAlert("Cannot Connect to Books Online", "The request timed out. You may be offline or the site may be down or slow. I noticed that Books Online, in Live Player only works on Android. Exception: " + exception.Message, "Ok");
             }
             finally
             {

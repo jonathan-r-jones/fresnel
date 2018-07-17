@@ -71,11 +71,22 @@ namespace Fresnel.Views
 
         async void Trips_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var trip = (TripLogEntry)e.Item;
-            await Navigation.PushAsync(new DetailPage(trip));
-
-            // Clear selection
-            trips.SelectedItem = null;
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                await DisplayAlert("Android Issue", "At the moment this feature only works on iOS but not Android. It may be fixed at a later date if we implement the GPS feature.", "Ok");
+                return;
+            }
+            try
+            {
+                var trip = (TripLogEntry)e.Item;
+                await Navigation.PushAsync(new DetailPage(trip));
+                // Clear selection
+                trips.SelectedItem = null;
+            }
+            catch
+            {
+                await DisplayAlert("Cannot Connect", "I noticed that at the moment it works on iOS but not Android.", "Ok");
+            }
         }
     }
 }
