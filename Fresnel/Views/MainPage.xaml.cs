@@ -49,7 +49,7 @@ namespace Fresnel.Views
             MenuList.Add(booksOnline);
             MenuList.Add(airWatchPage);
             MenuList.Add(solarWindsPage);
-            MenuList.Add(bikeSearchPage);
+            //MenuList.Add(bikeSearchPage);
             MenuList.Add(gpsPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);

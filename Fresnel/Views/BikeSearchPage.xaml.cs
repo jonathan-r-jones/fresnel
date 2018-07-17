@@ -12,10 +12,17 @@ namespace Fresnel.Views {
 
         private async Task LoadItemsAsync()
         {
-            bikesList.IsRefreshing = true;
-            bikesList.ItemsSource = await CraigsHelper.SearchAsync("bike");
-            bikesList.IsRefreshing = false;
-            bikesList.EndRefresh();
+            try
+            {
+                bikesList.IsRefreshing = true;
+                bikesList.ItemsSource = await CraigsHelper.SearchAsync("bike");
+                bikesList.IsRefreshing = false;
+                bikesList.EndRefresh();
+            }
+            catch (System.Exception exception)
+            {
+                await DisplayAlert("Cannot Connect to Craig's List", "The request timed out. You may be offline or the site may be down or slow. Exception: " + exception.Message, "Ok");
+            }
         }
 
         void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
