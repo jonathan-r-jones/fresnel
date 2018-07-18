@@ -27,7 +27,7 @@ namespace Fresnel.Views
             var page6 = new MasterPageItem() { Title = "Current Foreign Travel", Icon = "itemIcon6.png", TargetType = typeof(Page6) };
             var azureDataPage = new MasterPageItem() { Title = "Azure Data", Icon = "itemIcon9.png", TargetType = typeof(AzureDataPage) };
             var page8 = new MasterPageItem() { Title = "Splunk Connector", Icon = "itemIcon8.png", TargetType = typeof(Page8) };
-            var booksOnlinePage = new MasterPageItem() { Title = "Books Online", Icon = "gray_gold_diamond.png", TargetType = typeof(Page9) };
+            var booksOnlinePage = new MasterPageItem() { Title = "Test - Books Online", Icon = "gray_gold_diamond.png", TargetType = typeof(Page9) };
             var aboutPage = new MasterPageItem() { Title = "About", Icon = "itemIcon10.png", TargetType = typeof(AboutPage) };
             var gpsPage = new MasterPageItem() { Title = "Test - GPS", Icon = "red_top_hat_diamond.png", TargetType = typeof(TripLogPage) };
             var page7 = new MasterPageItem() { Title = "Test - Word Wrapping", Icon = "blue_pink_diamond.png", TargetType = typeof(Page7) };
@@ -35,7 +35,7 @@ namespace Fresnel.Views
             var solarWindsPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "bright_green_diamond.png", TargetType = typeof(SwPage) };
             var airWatchPage = new MasterPageItem() { Title = "Test - AirWatch SDK", Icon = "red_orange_diamond.png", TargetType = typeof(AirWatchPage) };
             var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
-            var monkeyPage = new MasterPageItem() { Title = "Test - Monkey Page", Icon = "goldenrod_1_diamond.png", TargetType = typeof(MonkeyPage) };
+            var monkeyListPage = new MasterPageItem() { Title = "Test - Images Online", Icon = "goldenrod_1_diamond.png", TargetType = typeof(MonkeyListPage) };
 
             MenuList.Add(page1);
             MenuList.Add(page2);
@@ -48,11 +48,11 @@ namespace Fresnel.Views
             MenuList.Add(aboutPage);
             // Adding menu items to menuList (!page, !main, !menu)
             MenuList.Add(booksOnlinePage);
-            MenuList.Add(monkeyPage);
+            MenuList.Add(monkeyListPage);
+            MenuList.Add(gpsPage);
             MenuList.Add(airWatchPage);
             MenuList.Add(solarWindsPage);
             //MenuList.Add(bikeSearchPage);
-            MenuList.Add(gpsPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);
 

@@ -1,36 +1,25 @@
-﻿using Fresnel.ViewModels;
-using System;
+﻿using System;
+using Plugin.TextToSpeech;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-namespace Fresnel.Views {
-    public partial class MonkeyPage : ContentPage {
-        MonkeyListViewModel monkeyListViewModel;
-        public MonkeyPage()
+namespace Fresnel.Views
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class MonkeyPage : ContentPage
+	{
+		public MonkeyPage ()
+		{
+			InitializeComponent ();
+		}
+
+        public void OnButtonClicked(object sender, EventArgs args)
         {
-            InitializeComponent();
-            monkeyListViewModel = new MonkeyListViewModel();
-            ButtonGet.Clicked += async (sender, e) =>
-            {
-                try
-                {
-                    ButtonGet.IsEnabled = false;
-                    await monkeyListViewModel.GetMonkeysAsync();
-                    ButtonGet.IsEnabled = true;
-                }
-                catch (Exception exception)
-                {
-                    await DisplayAlert(title: "Oh no!", message: "Unable to get monkeys: " + exception, cancel: "OK");
-                }
-            };
-            List.ItemTapped += async (sender, e) =>
-            {
-                var monkey = e.Item;
-                var details = new MonkeyPage();
-                details.BindingContext = monkey;
-                await Navigation.PushAsync(details);
-                List.SelectedItem = null; // Deselects the item.
-            };
-            BindingContext = monkeyListViewModel;
+
+            ((Button) sender).Text = "You clicked the button.";
+            //Refractored.Xam.TTS.CrossTextToSpeech.Current.Speak("Hello Gabriella and Jacob");
+            CrossTextToSpeech.Current.Speak("Hello");
+            CrossTextToSpeech.Current.Speak(Label1.Text);
         }
     }
 }
