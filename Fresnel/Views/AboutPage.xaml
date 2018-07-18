@@ -55,10 +55,10 @@
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     FontSize="Large"
-                    Text="Jul-17-2018 1:19 PM"
+                    Text="Jul-18-2018 10:58 AM"
                     TextColor="MidnightBlue"
                 />
-                               <!-- qq-3 -->
+                   <!-- !rfsp qq-3 mov-3 -->
                 <Label
                     HeightRequest="15" 
                     HorizontalTextAlignment="Center"
