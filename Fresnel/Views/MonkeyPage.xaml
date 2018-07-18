@@ -9,7 +9,7 @@
                 <Image Source="{Binding Image}"/>
                 <Label Text="{Binding Location}"/>
                 <Label x:Name="Label1" Text="{Binding Details}"/>
-                <Button Text="Tap for description" Clicked="OnButtonClicked"/>
+                <Button Text="Tap for a SPOKEN description!" Clicked="OnButtonClicked"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
