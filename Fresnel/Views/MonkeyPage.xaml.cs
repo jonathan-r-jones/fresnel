@@ -15,10 +15,8 @@ namespace Fresnel.Views
 
         public void OnButtonClicked(object sender, EventArgs args)
         {
-
             ((Button) sender).Text = "Click to hear it again.";
-            //Refractored.Xam.TTS.CrossTextToSpeech.Current.Speak("Hello Gabriella and Jacob");
-            CrossTextToSpeech.Current.Speak("How are you?");
+            CrossTextToSpeech.Current.Speak("How are you? I am well thanks for asking.");
             CrossTextToSpeech.Current.Speak(Label1.Text);
         }
     }

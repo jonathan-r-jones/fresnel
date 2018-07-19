@@ -24,8 +24,12 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
                 <!--<Button Text="Get Images" x:Name="ButtonGet" />-->
-                <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                <StackLayout IsVisible="{Binding IsBusy}"
+                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
+                    <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
                            Color="MidnightBlue" />
+                </StackLayout>
                 <ListView x:Name="List" ItemsSource="{Binding MonkeyList}">
                     <ListView.ItemTemplate>
                         <DataTemplate>

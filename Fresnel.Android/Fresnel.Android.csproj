@@ -147,9 +147,6 @@
     <AndroidResource Include="Resources\drawable\email_statistics.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_original.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\itemIcon1.png" />
   </ItemGroup>
   <ItemGroup>

@@ -46,6 +46,13 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
+                <!-- Challenge exercise - add Activity Indicator -->
+                <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
+                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
+                    <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
+                    <ActivityIndicator IsRunning="{Binding Source={x:Reference ThePage}, Path=IsBusy}" Color="MidnightBlue" >
+                    </ActivityIndicator>
+                </StackLayout>
                 <Grid>
                     <ListView ItemsSource="{Binding}" ItemTapped="OnEditBook">
                         <ListView.ItemTemplate>
@@ -60,15 +67,6 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-
-                    <!-- Challenge exercise - add Activity Indicator -->
-                    <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
-                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
-                        <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
-                        <ActivityIndicator IsRunning="{Binding Source={x:Reference ThePage}, Path=IsBusy}" Color="Accent" >
-                        </ActivityIndicator>
-                    </StackLayout>
-
                 </Grid>
 
             </StackLayout>
