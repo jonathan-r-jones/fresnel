@@ -15,6 +15,9 @@ namespace Fresnel.ViewModels
 
         public JSONPlaceholderUsersListViewModel()
         {
+            string methodName = "Entering method: JSONPlaceholderUsersListViewModel";
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(methodName);
+            Debug.WriteLine(methodName);
             JSONPlaceholderUsersList = new ObservableCollection<JSONPlaceholderUser>();
         }
 
@@ -32,12 +35,13 @@ namespace Fresnel.ViewModels
             }
         }
 
-        public async Task GetMonkeysAsync()
+        public async Task GetJSONUsersAsync()
         {
             if (IsBusy)
                 return;
             try
             {
+                Microsoft.AppCenter.Analytics.Analytics.TrackEvent("Entering method: Getting JSON users. - JRJ Jul-20-2018");
                 IsBusy = true;
                 var client = new HttpClient();
                 var json = await client.GetStringAsync("http://jsonplaceholder.typicode.com/users");
@@ -45,7 +49,7 @@ namespace Fresnel.ViewModels
                 foreach (var item in list)
                 {
                     JSONPlaceholderUsersList.Add(item);
-                    Debug.WriteLine("Name: " + item.Name);
+                    Debug.WriteLine("Jul-20-2018 - Name: " + item.Name);
                 }
             }
             finally

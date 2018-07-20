@@ -11,7 +11,7 @@ namespace Fresnel.Views {
             jsonPlaceholderUsersListViewModel = new JSONPlaceholderUsersListViewModel();
             try
             {
-                jsonPlaceholderUsersListViewModel.GetMonkeysAsync();
+                jsonPlaceholderUsersListViewModel.GetJSONUsersAsync();
             }
             catch (Exception exception)
             {
