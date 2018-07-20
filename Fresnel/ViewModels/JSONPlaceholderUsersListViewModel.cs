@@ -4,15 +4,15 @@ using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Net.Http;
 using System.Diagnostics;
+using System.Net.Http;
 
 namespace Fresnel.ViewModels
 {
     public class JSONPlaceholderUsersListViewModel : INotifyPropertyChanged
     {
+        private bool busy = false;
         public ObservableCollection<JSONPlaceholderUser> JSONPlaceholderUsersList { get; set; }
-
         public JSONPlaceholderUsersListViewModel()
         {
             string methodName = "Entering method: JSONPlaceholderUsersListViewModel";
@@ -20,9 +20,6 @@ namespace Fresnel.ViewModels
             Debug.WriteLine(methodName);
             JSONPlaceholderUsersList = new ObservableCollection<JSONPlaceholderUser>();
         }
-
-        private bool busy = false;
-
         public bool IsBusy
         {
             get { return busy; }
@@ -34,7 +31,6 @@ namespace Fresnel.ViewModels
                 OnPropertyChanged("IsBusy");
             }
         }
-
         public async Task GetJSONUsersAsync()
         {
             if (IsBusy)
@@ -59,14 +55,12 @@ namespace Fresnel.ViewModels
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-
         public void OnPropertyChanged(string name)
         {
             var changed = PropertyChanged;
             if (changed == null)
                 return;
             changed(this, new PropertyChangedEventArgs(name));
-
             //C# 6.0 - if this is changed then do this
             //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
