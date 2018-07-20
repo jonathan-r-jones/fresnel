@@ -1,33 +1,33 @@
 ﻿using Fresnel.Models;
 using Newtonsoft.Json;
-using System.ComponentModel;
-using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Fresnel.ViewModels
 {
     public class JSONPlaceholderUsersListViewModel : INotifyPropertyChanged
     {
-        private bool busy = false;
-        public ObservableCollection<JSONPlaceholderUser> JSONPlaceholderUsersList { get; set; }
+        private bool _busy = false;
+        public ObservableCollection<JSONPlaceholderUser> _jSONPlaceholderUsersList { get; set; }
         public JSONPlaceholderUsersListViewModel()
         {
             string methodName = "Entering method: JSONPlaceholderUsersListViewModel";
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(methodName);
             Debug.WriteLine(methodName);
-            JSONPlaceholderUsersList = new ObservableCollection<JSONPlaceholderUser>();
+            _jSONPlaceholderUsersList = new ObservableCollection<JSONPlaceholderUser>();
         }
         public bool IsBusy
         {
-            get { return busy; }
+            get { return _busy; }
             set
             {
-                if (busy == value)
+                if (_busy == value)
                     return;
-                busy = value;
+                _busy = value;
                 OnPropertyChanged("IsBusy");
             }
         }
@@ -39,12 +39,12 @@ namespace Fresnel.ViewModels
             {
                 Microsoft.AppCenter.Analytics.Analytics.TrackEvent("Entering method: Getting JSON users. - JRJ Jul-20-2018");
                 IsBusy = true;
-                var client = new HttpClient();
-                var json = await client.GetStringAsync("http://jsonplaceholder.typicode.com/users");
-                var list = JsonConvert.DeserializeObject<List<JSONPlaceholderUser>>(json);
-                foreach (var item in list)
+                var httpClient = new HttpClient();
+                var jsonURL = await httpClient.GetStringAsync("http://jsonplaceholder.typicode.com/users");
+                var deserializedList = JsonConvert.DeserializeObject<List<JSONPlaceholderUser>>(jsonURL);
+                foreach (var item in deserializedList)
                 {
-                    JSONPlaceholderUsersList.Add(item);
+                    _jSONPlaceholderUsersList.Add(item);
                     Debug.WriteLine("Jul-20-2018 - Name: " + item.Name);
                 }
             }
