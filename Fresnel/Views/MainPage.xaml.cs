@@ -34,9 +34,10 @@ namespace Fresnel.Views
             var openIncidentsPage = new MasterPageItem() { Title = "Test - JSON Data", Icon = "m_purple_diamond.png", TargetType = typeof(OpenIncidentsPage) };
             var solarWindsPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "bright_green_diamond.png", TargetType = typeof(SwPage) };
             var airWatchPage = new MasterPageItem() { Title = "Test - AirWatch SDK", Icon = "red_orange_diamond.png", TargetType = typeof(AirWatchPage) };
-            var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
             var monkeyListPage = new MasterPageItem() { Title = "Test - Images Online", Icon = "goldenrod_1_diamond.png", TargetType = typeof(MonkeyListPage) };
             var jsonPlaceholderUsersPage = new MasterPageItem() { Title = "Test - JSON Users Online", Icon = "tiel_diamond.png", TargetType = typeof(JSONPlaceholderUsersPage) };
+            //var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
+            //var craigsListBikesPage = new MasterPageItem() { Title = "Test - Craig's List Bikes Search", Icon = "tiel_diamond.png", TargetType = typeof(CraigsListBikesPage) };
 
             MenuList.Add(page1);
             MenuList.Add(page2);
@@ -54,9 +55,11 @@ namespace Fresnel.Views
             MenuList.Add(gpsPage);
             MenuList.Add(airWatchPage);
             MenuList.Add(solarWindsPage);
-            //MenuList.Add(bikeSearchPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);
+
+            //MenuList.Add(bikeSearchPage);
+            //MenuList.Add(craigsListBikesPage);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = MenuList;

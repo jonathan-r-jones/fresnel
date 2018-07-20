@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Fresnel.Views.MonkeyListPage"
-    Title="Test - Images Online">
+    x:Class="Fresnel.Views.CraigsListBikesPage"
+    Title="Test - Craig's List Bikes Search">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -23,18 +23,33 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
-                <!--<Button Text="Get Images" x:Name="ButtonGet" />-->
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Downloaded from JSON REST API at:"
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="http://"
+                    TextColor="MidnightBlue"
+                />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
                 <StackLayout IsVisible="{Binding IsBusy}"
                         HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
                     <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
                     <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
                            Color="MidnightBlue" />
                 </StackLayout>
-                <ListView x:Name="List" ItemsSource="{Binding MonkeyList}">
+                <ListView x:Name="List" ItemsSource="{Binding _bikeList}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ImageCell Text="{Binding Text}"
-                             Detail="{Binding Description}"
+                             Detail="{Binding Price}"
                              DetailColor="Blue"
                              ImageSource="{Binding Image}"/>
                         </DataTemplate>
