@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Fresnel.Views.JSONPlaceholderUsersPage"
+    Title="Test - JSON Placeholder Users">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Image 
+                    Aspect="AspectFit"
+                    BackgroundColor="White"
+                    HeightRequest="90"
+                    IsOpaque="True"                
+                    Source="doj.png"
+                    VerticalOptions="Center"
+                    WidthRequest="90"
+                />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Downloaded from JSON REST API at:"
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="http://jsonplaceholder.typicode.com/users"
+                    TextColor="MidnightBlue"
+                />
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <StackLayout IsVisible="{Binding IsBusy}"
+                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
+                    <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
+                           Color="MidnightBlue" />
+                </StackLayout>
+                <ListView x:Name="List" ItemsSource="{Binding JSONPlaceholderUsersList}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding Name}"
+                             Detail="{Binding Email}"
+                             DetailColor="Blue" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+</ContentPage>

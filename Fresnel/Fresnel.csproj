@@ -16,6 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\JSONPlaceholderUsersPage.xaml.cs">
+      <DependentUpon>JSONPlaceholderUsersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MonkeyListPage.xaml.cs">
       <DependentUpon>MonkeyListPage.xaml</DependentUpon>
     </Compile>

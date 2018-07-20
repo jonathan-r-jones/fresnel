@@ -29,11 +29,16 @@
                     HeightRequest="1" 
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
-
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     Text="This is NOT local data. It was downloaded from"
+                    TextColor="MidnightBlue"
+                />
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="the Xamarin University Course 150 Lab REST API at:"
                     TextColor="MidnightBlue"
                 />
                 <Label

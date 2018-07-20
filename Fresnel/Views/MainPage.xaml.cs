@@ -36,6 +36,7 @@ namespace Fresnel.Views
             var airWatchPage = new MasterPageItem() { Title = "Test - AirWatch SDK", Icon = "red_orange_diamond.png", TargetType = typeof(AirWatchPage) };
             var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
             var monkeyListPage = new MasterPageItem() { Title = "Test - Images Online", Icon = "goldenrod_1_diamond.png", TargetType = typeof(MonkeyListPage) };
+            var jsonPlaceholderUsersPage = new MasterPageItem() { Title = "Test - JSON Users Online", Icon = "tiel_diamond.png", TargetType = typeof(JSONPlaceholderUsersPage) };
 
             MenuList.Add(page1);
             MenuList.Add(page2);
@@ -47,8 +48,9 @@ namespace Fresnel.Views
             MenuList.Add(azureDataPage);
             MenuList.Add(aboutPage);
             // Adding menu items to menuList (!page, !main, !menu)
-            MenuList.Add(booksOnlinePage);
+            MenuList.Add(jsonPlaceholderUsersPage);
             MenuList.Add(monkeyListPage);
+            MenuList.Add(booksOnlinePage);
             MenuList.Add(gpsPage);
             MenuList.Add(airWatchPage);
             MenuList.Add(solarWindsPage);
