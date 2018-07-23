@@ -19,6 +19,9 @@
     <Compile Update="Views\CraigsListBikesPage.xaml.cs">
       <DependentUpon>CraigsListBikesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\JSONIncidentsPage.xaml.cs">
+      <DependentUpon>JSONIncidentsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\JSONPlaceholderUsersPage.xaml.cs">
       <DependentUpon>JSONPlaceholderUsersPage.xaml</DependentUpon>
     </Compile>

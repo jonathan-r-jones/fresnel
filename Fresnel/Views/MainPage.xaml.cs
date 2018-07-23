@@ -20,7 +20,7 @@ namespace Fresnel.Views
             // Here you can define title for item, 
             // icon on the left side, and page that you want to open after selection
             var page1 = new MasterPageItem() { Title = "Home", Icon = "itemIcon1.png", TargetType = typeof(Page1) };
-            var page2 = new MasterPageItem() { Title = "Open Incidents", Icon = "itemIcon2.png", TargetType = typeof(Page2) };
+            var page2 = new MasterPageItem() { Title = "Open Incidents - Hardcoded Version", Icon = "itemIcon2.png", TargetType = typeof(Page2) };
             var page3 = new MasterPageItem() { Title = "Operations", Icon = "itemIcon3.png", TargetType = typeof(Page3) };
             var page4 = new MasterPageItem() { Title = "SPDR Heat Map", Icon = "itemIcon4.png", TargetType = typeof(Page4) };
             var page5 = new MasterPageItem() { Title = "Email Statistics", Icon = "itemIcon5.png", TargetType = typeof(Page5) };
@@ -38,9 +38,10 @@ namespace Fresnel.Views
             var jsonPlaceholderUsersPage = new MasterPageItem() { Title = "Test - JSON Users Online", Icon = "tiel_diamond.png", TargetType = typeof(JSONPlaceholderUsersPage) };
             //var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
             //var craigsListBikesPage = new MasterPageItem() { Title = "Test - Craig's List Bikes Search", Icon = "tiel_diamond.png", TargetType = typeof(CraigsListBikesPage) };
+            var jsonIncidentsPage = new MasterPageItem() { Title = "Open Incidents", Icon = "tiel_diamond.png", TargetType = typeof(JSONIncidentsPage) };
 
             MenuList.Add(page1);
-            MenuList.Add(page2);
+            MenuList.Add(jsonIncidentsPage);
             MenuList.Add(page3);
             MenuList.Add(page5);
             MenuList.Add(page6);
@@ -57,6 +58,7 @@ namespace Fresnel.Views
             MenuList.Add(solarWindsPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);
+            MenuList.Add(page2);
 
             //MenuList.Add(bikeSearchPage);
             //MenuList.Add(craigsListBikesPage);
