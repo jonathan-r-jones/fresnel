@@ -40,7 +40,7 @@ namespace Fresnel.ViewModels
                 Microsoft.AppCenter.Analytics.Analytics.TrackEvent("Entering method: Getting JSON users. - JRJ Jul-20-2018");
                 IsBusy = true;
                 var httpClient = new HttpClient();
-                var jsonURL = await httpClient.GetStringAsync("http://jsonplaceholder.typicode.com/users");
+                var jsonURL = await httpClient.GetStringAsync("https://raw.githubusercontent.com/jonathan-r-jones/Fresnel/master/incidents.json");
                 var deserializedList = JsonConvert.DeserializeObject<List<JSONPlaceholderUser>>(jsonURL);
                 foreach (var item in deserializedList)
                 {
