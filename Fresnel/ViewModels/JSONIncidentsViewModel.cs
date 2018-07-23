@@ -12,13 +12,13 @@ namespace Fresnel.ViewModels
     public class JSONIncidentsViewModel : INotifyPropertyChanged
     {
         private bool _busy = false;
-        public ObservableCollection<JSONPlaceholderUser> _jSONIncidents { get; set; }
+        public ObservableCollection<Incident> _jSONIncidents { get; set; }
         public JSONIncidentsViewModel()
         {
             string methodName = "Entering method: JSONIncidentsViewModel";
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(methodName);
             Debug.WriteLine(methodName);
-            _jSONIncidents = new ObservableCollection<JSONPlaceholderUser>();
+            _jSONIncidents = new ObservableCollection<Incident>();
         }
         public bool IsBusy
         {
@@ -41,7 +41,7 @@ namespace Fresnel.ViewModels
                 IsBusy = true;
                 var httpClient = new HttpClient();
                 var jsonURL = await httpClient.GetStringAsync("https://raw.githubusercontent.com/jonathan-r-jones/Fresnel/master/incidents.json");
-                var deserializedList = JsonConvert.DeserializeObject<List<JSONPlaceholderUser>>(jsonURL);
+                var deserializedList = JsonConvert.DeserializeObject<List<Incident>>(jsonURL);
                 foreach (var item in deserializedList)
                 {
                     _jSONIncidents.Add(item);

@@ -26,7 +26,7 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="Downloaded from JSON REST API at:"
+                    Text="Downloaded from JSON data located at:"
                     TextColor="MidnightBlue"
                 />
                 <Label
@@ -49,7 +49,7 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ImageCell Text="{Binding Name}"
-                             Detail="{Binding Email}"
+                             Detail="{Binding Count}"
                              DetailColor="Blue" />
                         </DataTemplate>
                     </ListView.ItemTemplate>

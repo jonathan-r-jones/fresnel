@@ -42,6 +42,7 @@ namespace Fresnel.Views
 
             MenuList.Add(page1);
             MenuList.Add(jsonIncidentsPage);
+            MenuList.Add(page2);
             MenuList.Add(page3);
             MenuList.Add(page5);
             MenuList.Add(page6);
@@ -58,7 +59,6 @@ namespace Fresnel.Views
             MenuList.Add(solarWindsPage);
             MenuList.Add(page7);
             MenuList.Add(openIncidentsPage);
-            MenuList.Add(page2);
 
             //MenuList.Add(bikeSearchPage);
             //MenuList.Add(craigsListBikesPage);
