@@ -11,7 +11,7 @@ namespace Fresnel.Views {
             _jsonIncidentsViewModel = new JSONIncidentsViewModel();
             try
             {
-                _jsonIncidentsViewModel.GetJSONUsersAsync();
+                _jsonIncidentsViewModel.GetJSONIncidentsAsync();
             }
             catch (Exception exception)
             {

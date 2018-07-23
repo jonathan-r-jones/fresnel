@@ -31,7 +31,7 @@ namespace Fresnel.ViewModels
                 OnPropertyChanged("IsBusy");
             }
         }
-        public async Task GetJSONUsersAsync()
+        public async Task GetJSONIncidentsAsync()
         {
             if (IsBusy)
                 return;
