@@ -15,7 +15,7 @@ namespace Fresnel.ViewModels
         public ObservableCollection<JSONPlaceholderUser> _jSONIncidents { get; set; }
         public JSONIncidentsViewModel()
         {
-            string methodName = "Entering method: JSONPlaceholderUsersListViewModel";
+            string methodName = "Entering method: JSONIncidentsViewModel";
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(methodName);
             Debug.WriteLine(methodName);
             _jSONIncidents = new ObservableCollection<JSONPlaceholderUser>();

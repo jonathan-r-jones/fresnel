@@ -45,7 +45,7 @@
                     <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
                            Color="MidnightBlue" />
                 </StackLayout>
-                <ListView x:Name="List" ItemsSource="{Binding _jSONIncidents}">
+                <ListView x:Name="List" ItemsSource="{Binding _jSONPlaceholderUsersList}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ImageCell Text="{Binding Name}"
