@@ -12,13 +12,13 @@ namespace Fresnel.ViewModels
     public class JSONIncidentsViewModel : INotifyPropertyChanged
     {
         private bool _busy = false;
-        public ObservableCollection<JSONPlaceholderUser> _jSONPlaceholderUsersList { get; set; }
+        public ObservableCollection<JSONPlaceholderUser> _jSONIncidents { get; set; }
         public JSONIncidentsViewModel()
         {
             string methodName = "Entering method: JSONPlaceholderUsersListViewModel";
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent(methodName);
             Debug.WriteLine(methodName);
-            _jSONPlaceholderUsersList = new ObservableCollection<JSONPlaceholderUser>();
+            _jSONIncidents = new ObservableCollection<JSONPlaceholderUser>();
         }
         public bool IsBusy
         {
@@ -44,7 +44,7 @@ namespace Fresnel.ViewModels
                 var deserializedList = JsonConvert.DeserializeObject<List<JSONPlaceholderUser>>(jsonURL);
                 foreach (var item in deserializedList)
                 {
-                    _jSONPlaceholderUsersList.Add(item);
+                    _jSONIncidents.Add(item);
                     Debug.WriteLine("Jul-20-2018 - Name: " + item.Name);
                 }
             }
