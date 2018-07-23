@@ -32,7 +32,7 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="http://jsonplaceholder.typicode.com/users"
+                    Text="https://raw.githubusercontent.com/jonathan-r-jones/Fresnel/master/incidents.json"
                     TextColor="MidnightBlue"
                 />
                 <BoxView 

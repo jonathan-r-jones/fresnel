@@ -4,20 +4,20 @@ using Xamarin.Forms;
 
 namespace Fresnel.Views {
     public partial class JSONIncidentsPage : ContentPage {
-        JSONPlaceholderUsersListViewModel _jsonPlaceholderUsersListViewModel;
+        JSONIncidentsViewModel _jsonIncidentsViewModel;
         public JSONIncidentsPage()
         {
             InitializeComponent();
-            _jsonPlaceholderUsersListViewModel = new JSONPlaceholderUsersListViewModel();
+            _jsonIncidentsViewModel = new JSONIncidentsViewModel();
             try
             {
-                _jsonPlaceholderUsersListViewModel.GetJSONUsersAsync();
+                _jsonIncidentsViewModel.GetJSONUsersAsync();
             }
             catch (Exception exception)
             {
                 DisplayAlert(title: "Oh no!", message: "Unable to get data: " + exception, cancel: "OK");
             }
-            BindingContext = _jsonPlaceholderUsersListViewModel;
+            BindingContext = _jsonIncidentsViewModel;
         }
     }
 }
