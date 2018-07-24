@@ -316,6 +316,6 @@
     <BundleResource Include="Resources\tiel_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\cat_06 .png" />
+    <BundleResource Include="Resources\cat_06.png" />
   </ItemGroup>
 </Project>

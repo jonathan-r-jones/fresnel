@@ -50,7 +50,7 @@
                         <DataTemplate>
                             <ImageCell 
                              Text="{Binding Name}"
-                             TextColor="Blue"
+                             TextColor="MidnightBlue"
                              Detail="{Binding Count}"
                              DetailColor="Black"
                              ImageSource="{Binding Image}"/>
