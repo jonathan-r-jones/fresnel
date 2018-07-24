@@ -48,9 +48,12 @@
                 <ListView x:Name="List" ItemsSource="{Binding _jSONIncidents}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ImageCell Text="{Binding Name}"
+                            <ImageCell 
+                             Text="{Binding Name}"
+                             TextColor="Blue"
                              Detail="{Binding Count}"
-                             DetailColor="Blue" />
+                             DetailColor="Black"
+                             ImageSource="{Binding Image}"/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
