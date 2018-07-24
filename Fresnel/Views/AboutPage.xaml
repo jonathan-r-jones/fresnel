@@ -66,21 +66,21 @@
                     TextColor="MidnightBlue"
                 />
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="20" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     Text="This app was written in C# and native APIs"
                     TextColor="MidnightBlue"
                 />
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="20" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     Text="using Xamarin Forms, which shares code"
                     TextColor="MidnightBlue"
                 />
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="20" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     Text="between the iOS and Android platforms."
