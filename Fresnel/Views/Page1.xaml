@@ -24,7 +24,7 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="10" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     Text=" "
@@ -48,7 +48,7 @@
                     FontSize="Large"
                 />
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="10" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     Text=" "
