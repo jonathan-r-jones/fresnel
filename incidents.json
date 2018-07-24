@@ -15,4 +15,9 @@
     "name": "Investigation",
     "count": "154",
   }
+  {
+    "id": 4,
+    "name": "Word wrap test - The point of this element is to see if the text will. Therefore this text is very long in order see if it will wrap. So we have a lot of text here blah, blah and blah.",
+    "count": "130",
+  }
 ]
