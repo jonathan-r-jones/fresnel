@@ -19,7 +19,7 @@ namespace Fresnel.Views
             // Creating our pages for menu navigation
             // Here you can define title for item, 
             // icon on the left side, and page that you want to open after selection
-            var page1 = new MasterPageItem() { Title = "Home", Icon = "itemIcon1.png", TargetType = typeof(Page1) };
+            var page1 = new MasterPageItem() { Title = "Home - CSS System Status", Icon = "itemIcon1.png", TargetType = typeof(Page1) };
             var page2 = new MasterPageItem() { Title = "Open Incidents - Hardcoded Version", Icon = "diamond_2.png", TargetType = typeof(Page2) };
             var page3 = new MasterPageItem() { Title = "Operations", Icon = "itemIcon3.png", TargetType = typeof(Page3) };
             var page4 = new MasterPageItem() { Title = "SPDR Heat Map", Icon = "itemIcon4.png", TargetType = typeof(Page4) };

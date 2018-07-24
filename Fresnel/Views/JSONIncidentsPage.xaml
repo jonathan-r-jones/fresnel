@@ -24,13 +24,13 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="20" 
                     HorizontalTextAlignment="Center"
                     Text="Downloaded from JSON data located at:"
                     TextColor="MidnightBlue"
                 />
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="40" 
                     HorizontalTextAlignment="Center"
                     Text="https://raw.githubusercontent.com/jonathan-r-jones/Fresnel/master/incidents.json"
                     TextColor="MidnightBlue"
