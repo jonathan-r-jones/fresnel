@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fresnel.Views.Page1"
-             Title="Home">
+             Title="Home - CSS System Status">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -62,6 +62,12 @@
                     IsOpaque="True"                
                     WidthRequest="100"
                     HeightRequest="250"/>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Gray boxes indicate JCOTS appliances."
+                    TextColor="MidnightBlue"
+                />
 
             </StackLayout>
         </ScrollView>
