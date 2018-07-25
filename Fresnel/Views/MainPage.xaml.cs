@@ -20,7 +20,7 @@ namespace Fresnel.Views
             // Here you can define title for item, 
             // icon on the left side, and page that you want to open after selection
             var page1 = new MasterPageItem() { Title = "Home - CSS System Status", Icon = "itemIcon1.png", TargetType = typeof(Page1) };
-            var page2 = new MasterPageItem() { Title = "Open Incidents - Hardcoded Version", Icon = "diamond_2.png", TargetType = typeof(Page2) };
+            var page2 = new MasterPageItem() { Title = "Open Incidents - Hardcoded Version", Icon = "itemIcon2.png", TargetType = typeof(Page2) };
             var page3 = new MasterPageItem() { Title = "Operations", Icon = "itemIcon3.png", TargetType = typeof(Page3) };
             var page4 = new MasterPageItem() { Title = "SPDR Heat Map", Icon = "itemIcon4.png", TargetType = typeof(Page4) };
             var page5 = new MasterPageItem() { Title = "Email Statistics", Icon = "itemIcon5.png", TargetType = typeof(Page5) };
@@ -35,14 +35,13 @@ namespace Fresnel.Views
             var solarWindsPage = new MasterPageItem() { Title = "Test - SolarWinds Orion SDK", Icon = "bright_green_diamond.png", TargetType = typeof(SwPage) };
             var airWatchPage = new MasterPageItem() { Title = "Test - AirWatch SDK", Icon = "red_orange_diamond.png", TargetType = typeof(AirWatchPage) };
             var monkeyListPage = new MasterPageItem() { Title = "Test - Images Online", Icon = "goldenrod_1_diamond.png", TargetType = typeof(MonkeyListPage) };
-            var jsonPlaceholderUsersPage = new MasterPageItem() { Title = "Test - JSON Users Online", Icon = "tiel_diamond.png", TargetType = typeof(JSONPlaceholderUsersPage) };
+            var jsonPlaceholderUsersPage = new MasterPageItem() { Title = "Test - JSON Users Online", Icon = "chartreuse.png", TargetType = typeof(JSONPlaceholderUsersPage) };
             //var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
             //var craigsListBikesPage = new MasterPageItem() { Title = "Test - Craig's List Bikes Search", Icon = "tiel_diamond.png", TargetType = typeof(CraigsListBikesPage) };
-            var jsonIncidentsPage = new MasterPageItem() { Title = "Open Incidents", Icon = "itemIcon2.png", TargetType = typeof(JSONIncidentsPage) };
+            var jsonIncidentsPage = new MasterPageItem() { Title = "Test - JSON Incidents", Icon = "tiel_diamond.png", TargetType = typeof(JSONIncidentsPage) };
 
             MenuList.Add(page1);
-            MenuList.Add(jsonIncidentsPage);
-            //MenuList.Add(page2);
+            MenuList.Add(page2);
             MenuList.Add(page3);
             MenuList.Add(page5);
             MenuList.Add(page6);
@@ -52,6 +51,7 @@ namespace Fresnel.Views
             MenuList.Add(aboutPage);
             // Adding menu items to menuList (!page, !main, !menu)
             MenuList.Add(jsonPlaceholderUsersPage);
+            MenuList.Add(jsonIncidentsPage);
             MenuList.Add(monkeyListPage);
             MenuList.Add(booksOnlinePage);
             MenuList.Add(gpsPage);

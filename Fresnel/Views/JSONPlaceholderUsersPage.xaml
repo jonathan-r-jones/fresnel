@@ -26,7 +26,7 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="Downloaded from JSON REST API at:"
+                    Text="Downloaded from a JSON file located at:"
                     TextColor="MidnightBlue"
                 />
                 <Label
