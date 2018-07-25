@@ -52,7 +52,7 @@
                              Text="{Binding Name}"
                              TextColor="MidnightBlue"
                              Detail="{Binding Count}"
-                             DetailColor="Black"
+                             DetailColor="Purple"
                              ImageSource="{Binding Image}"/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
