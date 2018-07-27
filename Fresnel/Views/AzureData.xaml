@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Fresnel.Views.AzureDataPage"
     x:Name="TheAzPage" 
-    Title="Azure Data">
+    Title="Custom Azure Data">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add New" Icon="ic_action_new.png" Clicked="OnAddNewBook" />
         <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
@@ -49,7 +49,7 @@
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
-                    Text="is actual online Azure data that I created at:"
+                    Text="is actual online custom Azure data that I created at:"
                     TextColor="MidnightBlue"
                 />
                 <Label
