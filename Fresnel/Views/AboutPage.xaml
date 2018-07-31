@@ -50,13 +50,13 @@
                     Text="Application Date Version:"
                     TextColor="MidnightBlue"
                 />
-                <!-- !rfsp qq6 mov6 -->
+                <!-- !rfspfr qq6 mov6 -->
                 <Label
                     HeightRequest="30" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     FontSize="Large"
-                    Text="Jul-30-2018 2:45 PM"
+                    Text="Jul-31-2018 11:40 AM"
                     TextColor="MidnightBlue"
                 />
                 <Label
