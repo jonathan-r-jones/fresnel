@@ -1,2 +1,2 @@
 # Fresnel
-Learning AppCenter with Xamarin Forms
+Learning Microsoft AppCenter with Xamarin Forms.
