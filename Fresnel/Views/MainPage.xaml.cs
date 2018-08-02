@@ -37,8 +37,8 @@ namespace Fresnel.Views
             var monkeyListPage = new MasterPageItem() { Title = "Test - Images Online", Icon = "goldenrod_1_diamond.png", TargetType = typeof(MonkeyListPage) };
             var jsonPlaceholderUsersPage = new MasterPageItem() { Title = "Test - JSON Users Online", Icon = "mixed_purple_diamond.png", TargetType = typeof(JSONPlaceholderUsersPage) };
             var bikeSearchPage = new MasterPageItem() { Title = "Test - Craig's List Bike Search", Icon = "goldenrod_1_diamond.png", TargetType = typeof(BikeSearchPage) };
-            var craigsListBikesPage = new MasterPageItem() { Title = "Test - Craig's List Bikes Search", Icon = "bullseye.png", TargetType = typeof(CraigsListBikesPage) };
-            var jsonIncidentsPage = new MasterPageItem() { Title = "Test - Custom JSON Data", Icon = "tiel_diamond.png", TargetType = typeof(JSONIncidentsPage) };
+            //var craigsListBikesPage = new MasterPageItem() { Title = "Test - Craig's List Bikes Search", Icon = "bullseye.png", TargetType = typeof(CraigsListBikesPage) };
+            //var jsonIncidentsPage = new MasterPageItem() { Title = "Test - Custom JSON Data", Icon = "tiel_diamond.png", TargetType = typeof(JSONIncidentsPage) };
 
             MenuList.Add(page1);
             MenuList.Add(page2);
@@ -60,8 +60,8 @@ namespace Fresnel.Views
             MenuList.Add(page7);
             //MenuList.Add(openIncidentsPage);
 
-            MenuList.Add(bikeSearchPage);
-            MenuList.Add(craigsListBikesPage);
+            //MenuList.Add(bikeSearchPage);
+            //MenuList.Add(craigsListBikesPage);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = MenuList;
