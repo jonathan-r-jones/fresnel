@@ -333,4 +333,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\mixed_purple_diamond.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shark_finning_infographic.jpg" />
+  </ItemGroup>
 </Project>
