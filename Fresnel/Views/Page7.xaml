@@ -24,9 +24,10 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
                 <Label
-                    HeightRequest="30" 
+                    HeightRequest="40" 
                     HorizontalTextAlignment="Center"
-                    Text="Notice that there is word wrapping issue here."
+                    LineBreakMode="WordWrap"
+                    Text="Notice that there is word wrapping issue here. Using a FlexLayout control or maybe Alex's label with a wordwrap property may fix this issue. As you can see, this text here is wrapping."
                     TextColor="MidnightBlue"
                 />
                 <BoxView 
