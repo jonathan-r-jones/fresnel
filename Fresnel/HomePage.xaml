@@ -4,7 +4,7 @@
 		<Grid Padding="20">
 			<local:PinchToZoomContainer>
 				<local:PinchToZoomContainer.Content>
-                    <Image Source="shark-finning-infographic.jpg" />
+                    <Image Source="shark_finning_infographic.jpg" />
 				</local:PinchToZoomContainer.Content>
 			</local:PinchToZoomContainer>
 		</Grid>
