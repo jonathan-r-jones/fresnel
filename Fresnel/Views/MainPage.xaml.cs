@@ -52,12 +52,12 @@ namespace Fresnel.Views
             MenuList.Add(aboutPage);
             // Adding menu items to menuList (!page, !main, !menu)
             MenuList.Add(jsonPlaceholderUsersPage);
-            MenuList.Add(jsonIncidentsPage);
             MenuList.Add(monkeyListPage);
             MenuList.Add(booksOnlinePage);
             MenuList.Add(gpsPage);
             MenuList.Add(solarWindsPage);
             MenuList.Add(page7);
+            MenuList.Add(jsonIncidentsPage);
             MenuList.Add(homePage);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
