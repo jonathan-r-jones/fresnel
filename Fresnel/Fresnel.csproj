@@ -37,6 +37,9 @@
     <Compile Update="Views\AirWatchPage.xaml.cs">
       <DependentUpon>AirWatchPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\LargeOnlineImage.xaml.cs">
+      <DependentUpon>LargeOnlineImage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\SwPage.xaml.cs">
       <DependentUpon>SwPage.xaml</DependentUpon>
     </Compile>

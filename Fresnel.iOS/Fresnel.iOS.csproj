@@ -307,9 +307,6 @@
     <BundleResource Include="Resources\gray_gold_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\red_orange_diamond.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\tiel_diamond.png" />
   </ItemGroup>
   <ItemGroup>
@@ -335,5 +332,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\shark_finning_infographic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\red_orange.png" />
   </ItemGroup>
 </Project>

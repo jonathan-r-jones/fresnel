@@ -192,9 +192,6 @@
     <AndroidResource Include="Resources\drawable\bright_green_diamond.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\diamond_2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\red_top_hat_diamond.png" />
   </ItemGroup>
   <ItemGroup>
@@ -205,9 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\gray_gold_diamond.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\red_orange_diamond.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\tiel_diamond.png" />
@@ -234,13 +228,13 @@
     <AndroidResource Include="Resources\drawable\chartreuse.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bullseye.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\mixed_purple_diamond.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\shark_finning_infographic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\red_orange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

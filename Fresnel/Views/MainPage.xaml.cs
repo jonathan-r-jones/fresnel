@@ -40,6 +40,7 @@ namespace Fresnel.Views
             //var craigsListBikesPage = new MasterPageItem() { Title = "Test - Craig's List Bikes Search", Icon = "bullseye.png", TargetType = typeof(CraigsListBikesPage) };
             var jsonIncidentsPage = new MasterPageItem() { Title = "Test - Custom JSON Data", Icon = "tiel_diamond.png", TargetType = typeof(JSONIncidentsPage) };
             var homePage = new MasterPageItem() { Title = "Test - Pinch-To-Zoom", Icon = "chartreuse.png", TargetType = typeof(HomePage) };
+            var largeOnlineImagePage = new MasterPageItem() { Title = "Test - Large Online Image", Icon = "red_orange.png", TargetType = typeof(LargeOnlineImagePage) };
 
             MenuList.Add(page1);
             MenuList.Add(page2);
@@ -59,6 +60,7 @@ namespace Fresnel.Views
             MenuList.Add(page7);
             MenuList.Add(jsonIncidentsPage);
             MenuList.Add(homePage);
+            MenuList.Add(largeOnlineImagePage);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = MenuList;
