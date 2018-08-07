@@ -39,13 +39,22 @@
                     TextColor="MidnightBlue"
                     FontSize="Large"
                 />
-                <Image 
-                    BackgroundColor="WhiteSmoke"
-                    Source="css_system_status.PNG"
-                    Aspect="AspectFit"
-                    IsOpaque="True"                
-                    WidthRequest="100"
-                    HeightRequest="250"/>
+                <Label
+                    HeightRequest="30" 
+                    HorizontalTextAlignment="Center"
+                    Text="Downloaded from: https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
+                    TextColor="MidnightBlue"
+                />
+                <!--- Alternatively you can use attached property to manually alter the cache time-->
+                <Image IsVisible="true">
+                    <Image.Source>
+                        <UriImageSource 
+                			Uri="https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
+    	            		CacheValidity="10:00:00.0"
+        		        />
+                    </Image.Source>
+                </Image>
+
             </StackLayout>
         </ScrollView>
         </ContentPage.Content>
