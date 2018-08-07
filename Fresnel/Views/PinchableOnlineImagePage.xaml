@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fresnel.Views.PinchableOnlineImagePage"
+             Title="Pinchable Online Image Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView 
+                    HeightRequest="1" 
+                    WidthRequest="1"
+                    BackgroundColor="Gainsboro"/>
+                <!--- Alternatively you can use attached property to manually alter the cache time. -->
+                <Image IsVisible="true">
+                    <Image.Source>
+                        <UriImageSource 
+                			Uri="https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
+    	            		CacheValidity="23:59:59.0"
+        		        />
+                    </Image.Source>
+                </Image>
+
+            </StackLayout>
+        </ScrollView>
+        </ContentPage.Content>
+</ContentPage>
