@@ -24,7 +24,7 @@
                     WidthRequest="1"
                     BackgroundColor="Gainsboro"/>
                 <Label
-                    HeightRequest="10" 
+                    HeightRequest="5" 
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     Text=" "
@@ -32,25 +32,18 @@
                     FontSize="Large"
                 />
                 <Label
-                    HeightRequest="10" 
+                    HeightRequest="40" 
                     HorizontalTextAlignment="Center"
-                    FontAttributes="Bold"
-                    Text=" "
-                    TextColor="MidnightBlue"
-                    FontSize="Large"
-                />
-                <Label
-                    HeightRequest="30" 
-                    HorizontalTextAlignment="Center"
-                    Text="Downloaded from: https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
+                    LineBreakMode="WordWrap" 
+                    Text="The idea was to maybe break up the Daily Executive Report into a series of online images. This image was downloaded from: https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
                     TextColor="MidnightBlue"
                 />
-                <!--- Alternatively you can use attached property to manually alter the cache time-->
+                <!--- Alternatively you can use attached property to manually alter the cache time. -->
                 <Image IsVisible="true">
                     <Image.Source>
                         <UriImageSource 
                 			Uri="https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
-    	            		CacheValidity="10:00:00.0"
+    	            		CacheValidity="23:59:59.0"
         		        />
                     </Image.Source>
                 </Image>
