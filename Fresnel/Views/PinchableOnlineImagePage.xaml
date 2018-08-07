@@ -17,7 +17,7 @@
                         <Image IsVisible="true">
                             <Image.Source>
                                 <UriImageSource 
-                			        Uri="https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg"
+                			        Uri="https://raw.githubusercontent.com/jonathan-r-jones/For-Git-Testing/master/Art/dc_metro_map.jpg"
     	            		        CacheValidity="23:59:59.0"
                 		        />
                             </Image.Source>

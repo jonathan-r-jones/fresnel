@@ -10,7 +10,7 @@ namespace Fresnel.Views
 				Padding = new Thickness (20),
 				Children = {
 					new PinchToZoomContainer {
-						Content = new Image { Source = ImageSource.FromFile ("https://washington-org.s3.amazonaws.com/s3fs-public/metro-updated-map-2017.jpg") }
+						Content = new Image { Source = ImageSource.FromFile ("https://raw.githubusercontent.com/jonathan-r-jones/For-Git-Testing/master/Art/dc_metro_map.jpg") }
 					}	
 				}
 			};
