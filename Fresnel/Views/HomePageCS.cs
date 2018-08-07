@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Fresnel
+namespace Fresnel.Views
 {
 	public class HomePageCS : ContentPage
 	{

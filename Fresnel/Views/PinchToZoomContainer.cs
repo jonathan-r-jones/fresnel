@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
-namespace Fresnel
+namespace Fresnel.Views
 {
 	public class PinchToZoomContainer : ContentView
 	{
