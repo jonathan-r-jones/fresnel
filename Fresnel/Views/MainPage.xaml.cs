@@ -41,7 +41,7 @@ namespace Fresnel.Views
             var jsonIncidentsPage = new MasterPageItem() { Title = "Test - Custom JSON Data", Icon = "tiel_diamond.png", TargetType = typeof(JSONIncidentsPage) };
             var homePage = new MasterPageItem() { Title = "Test - Pinch-To-Zoom", Icon = "chartreuse.png", TargetType = typeof(HomePage) };
             var largeOnlineImagePage = new MasterPageItem() { Title = "Test - Large Online Image", Icon = "red_orange.png", TargetType = typeof(LargeOnlineImagePage) };
-            var pinchableOnlineImagePage = new MasterPageItem() { Title = "Test - Pinchable Online Image", Icon = "3_red.png", TargetType = typeof(PinchableOnlineImagePage) };
+            var pinchableOnlineImagePage = new MasterPageItem() { Title = "Test - Pinchable Online Image", Icon = "red_three.png", TargetType = typeof(PinchableOnlineImagePage) };
 
             MenuList.Add(page1);
             MenuList.Add(page2);
