@@ -3,7 +3,14 @@
              xmlns:local="clr-namespace:Fresnel.Views;assembly=Fresnel" x:Class="Fresnel.HomePage">
 	<ContentPage.Content>
 		<Grid Padding="20">
-			<local:PinchToZoomContainer>
+            <Label
+                HeightRequest="55" 
+                HorizontalTextAlignment="Center"
+                LineBreakMode="WordWrap" 
+                Text="The idea was to maybe slice up the Daily Executive Report into a series of online images."
+                TextColor="MidnightBlue"
+                />
+            <local:PinchToZoomContainer>
 				<local:PinchToZoomContainer.Content>
                     <Image Source="shark_finning_infographic.jpg" />
 				</local:PinchToZoomContainer.Content>
