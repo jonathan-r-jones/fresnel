@@ -41,7 +41,7 @@
 			<string>com.jonathan.fresnel</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fresnel</string>
+				<string>fresneldoj</string>
 			</array>
 			<key>CFBundleURLIconFile</key>
 			<string>doj</string>
