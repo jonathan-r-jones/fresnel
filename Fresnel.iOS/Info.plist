@@ -47,5 +47,10 @@
 			<string>doj</string>
 		</dict>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>airwatch</string>
+		<string>workspace</string>
+	</array>
 </dict>
 </plist>
