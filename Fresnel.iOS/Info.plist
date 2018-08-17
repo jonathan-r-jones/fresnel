@@ -34,5 +34,18 @@
 	<string>Fresnel</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.jonathan.fresnel</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fresnel</string>
+			</array>
+			<key>CFBundleURLIconFile</key>
+			<string>doj</string>
+		</dict>
+	</array>
 </dict>
 </plist>
