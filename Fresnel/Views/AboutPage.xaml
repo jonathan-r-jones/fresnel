@@ -56,7 +56,7 @@
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     FontSize="Large"
-                    Text="Aug-17-2018 1:41 PM"
+                    Text="Aug-17-2018 4:41 PM - AirWatch SDK Integration"
                     TextColor="MidnightBlue"
                 />
                 <Label

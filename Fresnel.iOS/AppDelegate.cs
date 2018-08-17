@@ -1,4 +1,8 @@
-﻿using System;
+﻿using ObjCRuntime;
+using System.Diagnostics;
+using AirWatchSDK;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -26,7 +30,40 @@ namespace Fresnel.iOS
             Xamarin.FormsMaps.Init();
             LoadApplication(new App());
 
-            return base.FinishedLaunching(app, options);
+            if (Runtime.Arch == Arch.SIMULATOR)
+            {
+                Debug.WriteLine("Running in Simulator, skipping initialization of the AirWatch SDK!");
+                return base.FinishedLaunching(app, options);
+            }
+            else
+            {
+                Debug.WriteLine("Running on Device, beginning initialization of the AirWatch SDK.");
+
+                // Configure the Controller by:
+                var sdkController = AWController.ClientInstance();
+                // 1) defining the callback scheme so the app can get called back,
+                sdkController.CallbackScheme = "fresneldoj"; // defined in Info.plist
+                                                             // 2) set the delegate to know when the initialization has been completed.
+                sdkController.Delegate = AirWatchSDKManager.Instance;
+                return base.FinishedLaunching(app, options);
+            }
         }
+
+        public override void OnActivated(UIApplication application)
+        {
+            AWController.ClientInstance().Start();
+        }
+
+        public override bool HandleOpenURL(UIApplication application, NSUrl url)
+        {
+            return AWController.ClientInstance().HandleOpenURL(url, "");
+        }
+
+        [Export("window")]
+        public UIWindow GetWindow()
+        {
+            return UIApplication.SharedApplication.Windows[0];
+        }
+
     }
 }
